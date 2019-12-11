@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x16-favicon.png') }}" sizes="16x16" />
+	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x32-favicon.png') }}" sizes="32x32" />
+	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x64-favicon.png') }}" sizes="64x64" />
+	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') }}" sizes="256x256" />
+	  <link rel="apple-touch-icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') }}" />
+
+	  {% block meta %}
+
+    <meta content="{{ config.description }}" name="description">
+    <meta content="software development, software engineering, podcast" name="keywords">
+
+  	<!-- Facebook -->
+  	<meta property="og:url" content="{{ config.base_url }}">
+  	<meta property="og:type" content="website">
+  	<meta property="og:site_name" content="{{ config.title }}">
+  	<meta property="og:description" content="{{ config.description }}">
+  	<meta property="og:title" content="{{ config.title }}">
+  	<meta property="og:image" content="{{ get_url(path='images/top-banner.png') }}">
+  	<!-- /Facebook -->
+
+  	<!-- Twitter -->
+  	<meta name="twitter:card" content="summary_large_image">
+  	<meta name="twitter:site" content="{{ config.extra.twitter }}">
+  	<meta name="twitter:title" content="{{ config.title }}">
+  	<meta name="twitter:description" content="{{ config.description }}">
+  	<meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') }}">
+  	<!-- /Twitter -->
+
+	  {% endblock meta %}
+
+
+
+		<link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+		<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-content">
+				<h1 class="site-title"><a href="{{config.base_url}}">
+				software sessions
+				</a></h1>
+
+				<nav class="main-nav">
+					<ul>
+						<li><a href="{{config.base_url}}">Home</a></li>
+						<span> | </span>
+						<li><a href="{{config.base_url}}/episodes">Episodes</a></li>
+						<span> | </span>
+						<li><a href="{{config.base_url}}/subscribe">Subscribe</a></li>
+						<span> | </span>
+						<li><a href="{{config.base_url}}/about">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			{% block body %}
+			<article>
+				<h2 class="intro-header">A podcast about building software.</h2>
+				{% if page.content %}
+					{{ page.content | safe }}
+				{% endif %}
+				<p>Hi, I'm <a href="https://www.jeremyjung.com">Jeremy Jung</a>. I'm chatting with folks to learn about their projects, careers, and building better software.</p>
+
+				<p>If you'd like to say hello, you can <a href="mailto:contact@softwaresessions.com">e-mail</a> me.  Or you could use <a href="https://www.twitter.com/jertype">twitter</a>. I guess that's okay too.</p>
+
+				<iframe src='https://share.transistor.fm/e/software-sessions/playlist/dark' width='100%' height='390' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:390px;'></iframe>
+				Show notes and transcripts are available on the <a href="{{config.base_url}}/episodes">episode pages</a>.
+			</article>
+			{% endblock body %}
+		</main>
+	</body>
+</html>

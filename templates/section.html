@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+{% block meta %}
+  <meta content="{{ config.description }}" name="description">
+  <meta content="software development, software engineering, podcast" name="keywords">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="{{ config.base_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.title }}">
+  <meta property="og:description" content="{{ config.description }}">
+  <meta property="og:title" content="{{ section.title }} | {{ config.title }}">
+  <meta property="og:image" content="{{ get_url(path='images/top-banner.png') }}">
+  <!-- /Facebook -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ config.extra.twitter }}">
+  <meta name="twitter:title" content="{{ section.title }} | {{ config.title }}">
+  <meta name="twitter:description" content="{{ config.description }}">
+  <meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') }}">
+  <!-- /Twitter -->
+{% endblock meta %}
+
+{% block title %}{{ config.title }} - {{ section.title }}{% endblock title %}
+
+{% block body %}
+	<article class="post-summaries">
+		<ul>
+		    {% for page in section.pages %}
+			    <li>
+			    	<article>
+				    	<header class="post-header">
+		            <a href="{{ page.permalink }}"><h2>{{ page.title }}</h2></a>
+	            	{% if page.date %}
+			            <span class="post-byline">
+		              	{{ page.date | date(format="%B %e, %Y")}}
+		            	</span>
+	            	{% endif %}
+		            <p>{{ page.description }}</p>
+					    </header>
+		    		</article>
+		      </li>    
+		    {% endfor %}
+		</ul>
+	</article>
+{% endblock body %}
