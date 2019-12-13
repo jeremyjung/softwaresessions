@@ -128,10 +128,12 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* If you don't add this, the body of the page will shrink if there's y-scrollable area */
 html {
+  /* If you don't add this, the body of the page will shrink if there's y-scrollable area */
   overflow-y: scroll;
   line-height: 1.65;
+  visibility: visible;
+  opacity: 1; 
 }
 
 body {
