@@ -16,7 +16,10 @@ You can also take a look at the source for [this website](https://github.com/jer
 ### Vincent Prouillet
 - [Personal Site](https://www.vincentprouillet.com/)
 - [@20100Prouillet](https://twitter.com/20100Prouillet)
-- [Zola](https://www.getzola.org) (Static site generator)
+
+### Zola
+- [Zola Website](https://www.getzola.org)
+- [Zola Forum](https://zola.discourse.group/)
 
 ### Tools/Crates used by Zola
 - [pulldown-cmark](https://github.com/raphlinus/pulldown-cmark) (Markdown)
