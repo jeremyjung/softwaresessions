@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="{{ config.description }}" name="description">
+		<meta content="software development, software engineering, podcast" name="keywords">
 
-	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x16-favicon.png') }}" sizes="16x16" />
-	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x32-favicon.png') }}" sizes="32x32" />
-	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x64-favicon.png') }}" sizes="64x64" />
-	  <link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') }}" sizes="256x256" />
-	  <link rel="apple-touch-icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') }}" />
+		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x16-favicon.png') | safe }}" sizes="16x16" />
+		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x32-favicon.png') | safe }}" sizes="32x32" />
+		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x64-favicon.png') | safe }}" sizes="64x64" />
+		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') | safe }}" sizes="256x256" />
+		<link rel="apple-touch-icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') | safe }}" />
+		<link rel="alternate" type="application/rss+xml" title="Software Sessions" href="https://feeds.transistor.fm/software-sessions" />
+		<link rel="stylesheet" href="{{ get_url(path='style.css') | safe }}">
 
-	  {% block meta %}
+		{% set social_title = config.title %}
+		{% if page %}
+			{% set social_title =  page.title ~ " | " ~ config.title %}
+		{% elif section and section.title %}
+			{% set social_title =  section.title ~ " | " ~ config.title %}
+		{% endif %}
 
-    <meta content="{{ config.description }}" name="description">
-    <meta content="software development, software engineering, podcast" name="keywords">
+		<!-- Facebook -->
+		<meta property="og:url" content="{{ config.base_url | safe }}">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="{{ config.title }}">
+		<meta property="og:description" content="{{ config.description }}">
+		<meta property="og:image" content="{{ get_url(path='images/top-banner.png') | safe }}">
+		<meta property="og:title" content="{{ social_title }}">
+		<!-- /Facebook -->
 
-  	<!-- Facebook -->
-  	<meta property="og:url" content="{{ config.base_url }}">
-  	<meta property="og:type" content="website">
-  	<meta property="og:site_name" content="{{ config.title }}">
-  	<meta property="og:description" content="{{ config.description }}">
-  	<meta property="og:title" content="{{ config.title }}">
-  	<meta property="og:image" content="{{ get_url(path='images/top-banner.png') }}">
-  	<!-- /Facebook -->
-
-  	<!-- Twitter -->
-  	<meta name="twitter:card" content="summary_large_image">
-  	<meta name="twitter:site" content="{{ config.extra.twitter }}">
-  	<meta name="twitter:title" content="{{ config.title }}">
-  	<meta name="twitter:description" content="{{ config.description }}">
-  	<meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') }}">
-  	<!-- /Twitter -->
-
-    <link rel="alternate" type="application/rss+xml" title="Software Sessions" href="https://feeds.transistor.fm/software-sessions" />
-
-	  {% endblock meta %}
-
-	  <style>html { visibility: hidden; opacity: 0; }</style>
-		<link rel="stylesheet" href="{{ get_url(path='style.css') }}">
-		<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="{{ config.extra.twitter }}">
+		<meta name="twitter:description" content="{{ config.description }}">
+		<meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') | safe }}">
+		<meta name="twitter:title" content="{{ social_title }}">
+		<!-- /Twitter -->
 	</head>
 	<body>
 		<header class="header">
 			<div class="header-content">
-				<h1 class="site-title"><a href="{{config.base_url}}">
+				<h1 class="site-title"><a href="{{config.base_url | safe}}">
 				software sessions
 				</a></h1>
 
@@ -51,11 +50,11 @@
 					<ul>
 						<li><a href="{{config.base_url}}">Home</a></li>
 						<span> | </span>
-						<li><a href="{{config.base_url}}/episodes">Episodes</a></li>
+						<li><a href="{{ get_url(path="@/episodes/_index.md") }}">Episodes</a></li>
 						<span> | </span>
-						<li><a href="{{config.base_url}}/subscribe">Subscribe</a></li>
+						<li><a href="{{ get_url(path="@/subscribe/index.md") }}">Subscribe</a></li>
 						<span> | </span>
-						<li><a href="{{config.base_url}}/about">About</a></li>
+						<li><a href="{{ get_url(path="@/about/index.md") }}">About</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -72,7 +71,7 @@
 				<p>If you'd like to say hello, you can <a href="mailto:contact@softwaresessions.com">e-mail</a> me.  Or you could use <a href="https://www.twitter.com/jertype">twitter</a>. I guess that's okay too.</p>
 
 				<iframe src='https://share.transistor.fm/e/software-sessions/playlist/dark' width='100%' height='390' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:390px;'></iframe>
-				Show notes and transcripts are available on the <a href="{{config.base_url}}/episodes">episode pages</a>.
+				Show notes and transcripts are available on the <a href="{{ get_url(path="@/episodes/_index.md") }}">episode pages</a>.
 			</article>
 			{% endblock body %}
 		</main>

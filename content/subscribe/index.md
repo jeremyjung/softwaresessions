@@ -1,6 +1,5 @@
 +++
 title = "Subscribe"
-template = "page.html"
 +++
 
 Hey, you can subscribe if you want.

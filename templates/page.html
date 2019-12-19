@@ -1,28 +1,6 @@
 {% extends "index.html" %}
 
-{% block meta %}
-  <meta content="{{ page.description }}" name="description">
-  <meta content="software development, software engineering, podcast" name="keywords">
-
-  <!-- Facebook -->
-  <meta property="og:url" content="{{ config.base_url | safe }}">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="{{ config.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:title" content="{{ page.title }} | {{ config.title }}">
-  <meta property="og:image" content="{{ get_url(path='images/top-banner.png') }}">
-  <!-- /Facebook -->
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="{{ config.extra.twitter }}">
-  <meta name="twitter:title" content="{{ page.title }} | {{ config.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') | safe }}">
-  <!-- /Twitter -->
-{% endblock meta %}
-
-{% block title %}{{ config.title }} - {{ page.title }}{% endblock title %}
+{% block title %}{{ config.title }} - {{ page.title }}{% endblock title %}]
 
 {% block body %}
   <article>
