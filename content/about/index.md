@@ -1,6 +1,5 @@
 +++
 title = "About"
-template = "page.html"
 +++
 
 Hi, I'm Jeremy Jung. 
