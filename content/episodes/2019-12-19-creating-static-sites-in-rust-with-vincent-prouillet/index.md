@@ -73,6 +73,8 @@ You can also take a look at the source for [this website](https://github.com/jer
 - [00:46:10] Issues or things you wish existed in Rust?
 - [00:50:28] Helping out with Zola
 
+Theme music is [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-am) by Crystal Cola.
+
 ---
 
 ### Transcript
