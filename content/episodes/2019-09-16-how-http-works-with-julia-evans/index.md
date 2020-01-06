@@ -3,6 +3,8 @@ title = "How HTTP Works with Julia Evans"
 
 description = "Julia Evans explains all things HTTP, the need for intermediate level educational materials, the importance of fundamentals, writing to an audience, the zine format, and working on education professionally."
 
+aliases = ["/episodes/http-and-intermediate-education-with-julia-evans"]
+
 [extra]
 episode_url = "https://media.transistor.fm/c5d70ee3.mp3"
 +++
