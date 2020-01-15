@@ -38,8 +38,6 @@ Jack is a software consultant with over 12 years of PHP experience.  He's curren
 ### Other Links
 - [Things you should never do](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/) (Post Jack mentions on never rewriting software)
 
-Theme music 
-
 ### Timestamps
 
 - [00:00:58] What's Fathom Analytics and how is it different from Google Analytics?
