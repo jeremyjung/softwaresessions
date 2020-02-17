@@ -31,7 +31,7 @@ We talk about:
 
 ### Transcript
 
-This transcript is incomplete.  You can help me edit it at [GitHub](https://github.com/jeremyjung/softwaresessions/tree/master/content/episodes).
+You can help edit this transcript at [GitHub](https://github.com/jeremyjung/softwaresessions/tree/master/content/episodes).
 
 <div class="transcript">
 
@@ -327,5 +327,86 @@ For what it's worth pretty much Amazon runs on it right a trillion dollar compan
 **Daniel** I think it depends because monitoring is such a big space. I think popular solutions, which I think they all have some good things like Datadog, honeycomb, elastic search, and kibana and a few others. I think again it depends whether you're running a small web application with 10 servers or whether you're running something with 10,000 servers, there's lots of different things, or whether you have just a monolithic application, does it just basically horizontal scale like a rails app or whether you have a constellation of 200 microservices.
 
 I think the options here start to change dramatically. What makes sense and what's not right. But, I think this field is evolving a lot, that there isn't really a one thing, sort of one product or one solution that's just the best for everything. I think again, it's hard to give suggestions and sort of in general on this topic. This is one of the reasons it was hard to sort of make it fit in the book.
+
+**Jeremy** One of the things you mentioned earlier was how to host your Userbase website, you chose Netlify because the user experience or the developer experience was so much better. What is your thoughts on services like Heroku, for example, that are a layer on top of AWS, take a lot of the choice and the things that people need to learn when they want to deploy an application.
+
+Why should someone spend the time to learn AWS when there are services that lie on top of it?
+
+**Daniel** No, no. I am a big fan of the Platform as a Service Heroku-style approach. If I was working on a rails application I think Heroku could be my default choice very easily. If you have outgrown Heroku for some reason and you're running into some limits or it's too expensive or whatever. Sure. It's not super easy to migrate but you could do it. It's not that hard. You don't need to necessarily learn AWS or learn all the things.
+
+Or learn EC2 right? Because AWS has many things you could still use Heroku, S3, and DynamoDB for example which I think are very useful tools in your tool chain to consider regardless of where you're hosting the application.
+
+I definitely see a future where for most traditional web applications in general and mobile application and things like that the abstraction away from thinking about the server, the network, the operating system gets abstracted away.
+
+As a developer myself I would feel even more comfortable developing that way. My take on EC2 is it's not necessarily that whatever you're doing, you should use EC2. If you literally want a replica of your computer or close to it somewhere running in the cloud EC2 gives you that. But if what you want is something that runs your Rails application Heroku is that. And even Elastic Beanstalk for example, in the AWS world it's not as abstracted as Heroku you still end up setting up your own instances and have to do some things yourself. It's a layer in-between, but it's bootstraps that for you that that's how I think of Elastic Beanstalk. At least it sets it up without you having to figure it out. All the VPC and security groups and network and load balancer settings and things like that. Yeah. Big fan of the platform as a service tech.
+
+**Jeremy** Yeah. Knowing kind of how AWS works from the inside, what do you think is preventing AWS from building something similar to Heroku? Like having a better developer experience for people.
+
+**Daniel** It's going to sound harsh but I don't think Amazon in general than AWS specifically is good at these things. AWS is really good at providing products that end at the API, something DynamoDB and S3 things like that. When you start to getting into the developer experience, user experience, UI sort of the intangibles, hard to measure that make people happy when you use them. It just doesn't get it. With the company there's something in it it doesn't know how to understand that, how to measure that, how to sort of develop in it. I think this is very visible, if you look at the console it's borderline frustrating barely usable, some part of right in my opinion and I think in the opinion of many, even the documentation and many other things. 
+
+I've definitely seen this from the inside as well it's just really really hard to make a case for the things that are just hard to measure.
+
+You can never say never I mean maybe things change, but I think from at least the time that I left which was exactly a year ago, actually literally today. Things were still like that where the focus pretty much all the way up to the executive level or pretty much the CEO where the focus is on the latencies of APIs and the 99th percentile error rate it's like this is what everyone looks at oh we managed to improve this API speed by two milliseconds. Big wins, right? Which is, which is good this sometimes translates to developer experience, but the more complicated thing like the Netlify experience where I literally just signed up for Netlify connected to my GitHub account, click two buttons to my build command click okay and suddenly I have a URL for my website running where every commit has its own URL, like these small things.
+
+I think sort of the issue with AWS is that the way most of AWS gets built is a bit more project driven. Customers tend to ask for something and Amazon builds it. Customers typically tend to ask, you know, I want this feature that I want this flag, I want this setting and Amazon turns around and builds it and does a good job there. But things don't start with a vision of a highly polished developer experience or user experience.
+
+Which I think is funny one of the examples is that every new initiative every AWS service starts with, I don't know if you heard about it, but with the six page document. This is how AWS builds new things.
+
+Where if you have an idea or you write a six page document, uh, explaining sort of writing pretty much the press release and the FAQ and sort of how things are going to look but it's all text you're banned from putting any images any demos any tables. It has to be all text, which again, like this works really well for when you're doing something very low level that's easy to describe in a sort of relative form: the interface is very slow. 
+
+But it's super hard to describe something where you just experience it and you feel happy about that. That is just, um, it doesn't seem to match. I think,  what works there is like the demos, like the high fidelity demos, the working examples where you just say, Oh look, just type this and this and this happens.
+like this is amazing. So yeah, I wouldn't worry too much about Amazon sort of entering or competing with the developer experience focused businesses. You know, it could happen but I wouldn't bet on it.
+
+**Jeremy** It would require like a really big culture shift
+
+**Daniel** A DNA change. Yeah. I see it very hard to happen the way things are structured right? The obsession is on something different all the way up right just a culture that I think started even with the amazon.com the eCommerce business and translated later to AWS as well I believe.
+
+**Jeremy** Yeah. It's interesting because people sometimes talk about how Amazon has this customer obsession, right? And that kind of goes into what you were saying about how people ask for things and then Amazon gives it to them. But they don't pull back a little bit and figure out like what is the story of somebody who wants to build an app? How can we make that experience really smooth for them? It's more about how can we just get them the features they need and if they have to cobble them all together and it's complicated. It's okay.
+
+**Daniel** It is like that. It's definitely something that I've observed. Like it's the way things work and like the customers ask for this. Once the customer asks, you have the mandate, pretty much the obligation not always right but to deliver it.
+
+And that's it. That's how it works. That's how roadmaps get built. I think you, you need to do things differently when you're just trying to keep things simple. And this is the reason why setting something up in AWS ends up being, yeah, you have to patch these 50 things together right?
+To have to configure permissions for different AWS services to talk to each other like this is insane. Like, why am I giving permission to CodeBuild to use CodeDeploy? Like these are two AWS services and things like that. Don't get me wrong like I think people are trying to improve these things. It's not like nobody's aware of it. But I believe the environment that exists, the culture right the way things work, it's just super hard to make progress.
+
+And actually I think the progress seems to be happening in the wrong direction, unfortunately. Not intentionally, but I think this is me speculating, but I think it's quite obvious most of AWS as a business nowadays comes from big enterprises and government contracts and things like that, which I think have very different requirements and needs than the indie developer and the small business.
+
+And this is why when you go and spin up an EC2 instance, you get sort of a page of like, you know, 20 options that many of them you won't ever need but they're there because if you're a bank and you have regulation that your server can't be mixed up with someone else's. You know, you have to choose this box right, which is only there because of, you know, some industry or something like that.
+
+**Jeremy** As an overall strategy, I mean, clearly currently AWS is the market leader in terms of cloud providers, but in your opinion looking back at your experience there and how you think the future is going to go. Do you think the strategy of building so many different services and just seeing what sticks, is that a good strategy or do you think that it would be better having less products, but with some more, I guess thought put into them?
+
+**Daniel** Yeah, I think, I think unfortunately, because I wouldn't want to see this happen, but I think AWS will become the IBM of what IBM is today right basically becomes a vendor for big companies, big governments, a consultant even doing what they want because that's where the money is. And any value for the smaller businesses and the small developers and whatever would likely come from maybe other businesses that build on top of AWS
+like Heroku for example. It's sort of how I see the evolution happening. I think we're already on trajectory. It's already started. It's hard to really predict when or how or how much may be and I hope actually that it still remains feasible that I could do basic things with AWS without sort of getting to lots of hurdles and things like that.
+
+But if I were to predict how I see it going it's just the pressures of the financial aspects of wall street. Everyone is expecting it to keep growing 40% year on year.
+And you know, I think the incentives are structured such that there's a limit to how much the small developers can provide. And if you go chase the $10 billion contracts with the Pentagon or whatever you build very different products. Let's face it. I mean, we're not fooling anyone.
+
+So I'd say the Pentagon definitely has different requirements than I need. And sometimes it's just a distraction. But I think what ends up happening is that the products have evolved to mirror what the big customers wants. Again, we mentioned CloudFront.
+
+I think again, like it's just a different experience. If anyone wants to go to CloudFront and you go set a new distribution or whatever it's called, you get this page that I think you can kind of scroll twice of many different options  and every one has a learn more next to it you go to documentation, which everything is useful but for many people that just want to put some static assets in a CDN it's a lot.  
+
+**Jeremy** Especially when you're a developer and you want to use a CDN, and you go to say CloudFlare and it's like a few clicks, and then you've got this CDN in front of your application.
+
+**Daniel** Right so either AWS sort of become something that most of us will never touch directly again, or maybe and this is maybe the most optimistic is that it remains a power tool a power service. Like if you really want to customize everything you you go there.
+
+Um, but we'll see maybe we'll have another podcast in 10 years and we'll reflect on this prediction (laughs).
+
+**Jeremy** That's a interesting insight. I've definitely seen the trajectory of it starting out as this pretty straight forward simple service for developers to needing to serve more and more large customers get more and more complicated. And now if you're somebody who's new to development and you just want to host something on AWS, going to that console is just
+
+**Daniel** It's daunting. Yeah.
+
+**Jeremy** If people want to check out Userbase or your book or yourself, I know you have a lot of interesting tweets now about your experience running your own business and that sort of thing.
+
+**Daniel** Yeah. I'm mostly active on Twitter, so I'm @dvassallo where I have the links there to my site and my book and my business. And I'm basically documenting my journey. I left Amazon exactly a year ago.
+Since then, I've settled mostly on Twitter, but occasionally I write a blog post, but on Twitter, mostly on a daily basis I'm sharing what I'm learning and what I'm seeing, decisions that I'm making some behind the scenes, insight about the business learning, like the books.
+For example the book I shared some of my marketing efforts and performance of the book and the sales and things like that, which, I think people find interesting sometimes as an inspiration for somebody wanting to do something similar, you can learn from my mistakes or get inspired by hopefully the good results.
+
+But yeah I'm enjoying this and I have a decent following since I started. I think there's lots of interest right in how things work and how to sort of start your own thing and how to, especially to get through the initial hurdles right this the first time I'm doing some of these things.
+The book I had never wrote a book or a digital product so yeah, Twitter is where I share most.
+
+**Jeremy** Very cool. Well, Daniel, thank you so much for joining me today.
+
+**Daniel** Thank you Jeremy. Thanks. This was fun. 
+
+**Jeremy** I hope you enjoyed the conversation with Daniel. You can get show notes for this episode at softwaresessions.com and we'll see you in a couple of weeks.
 
 </div>
