@@ -58,8 +58,6 @@
 						<li><a href="{{ get_url(path="@/episodes/_index.md") }}">Episodes</a></li>
 						<span> | </span>
 						<li><a href="{{ get_url(path="@/subscribe.md") }}">Subscribe</a></li>
-						<span> | </span>
-						<li><a href="{{ get_url(path="@/about.md") }}">About</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -67,13 +65,11 @@
 		<main>
 			{% block body %}
 			<article>
-				<h2 class="intro-header">A podcast about building software.</h2>
+				<h2 class="intro-header">Practical conversations about building software</h2>
 				{% if page.content %}
 					{{ page.content | safe }}
 				{% endif %}
-				<p>Hi, I'm <a href="https://www.jeremyjung.com">Jeremy Jung</a>. I'm chatting with folks to learn about their projects, careers, and building better software.</p>
-
-				<p>If you'd like to say hello, you can <a href="mailto:contact@softwaresessions.com">e-mail</a> me.  Or you could use <a href="https://www.twitter.com/jertype">twitter</a>. I guess that's okay too.</p>
+				<p>Say 👋 via <a href="mailto:contact@softwaresessions.com">e-mail</a> or <a href="https://www.twitter.com/jertype">twitter</a>.</p>
 
 				<iframe src='https://share.transistor.fm/e/software-sessions/playlist/dark' width='100%' height='390' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:390px;'></iframe>
 				Show notes and transcripts are available on the <a href="{{ get_url(path="@/episodes/_index.md") }}">episode pages</a>.
