@@ -2,8 +2,6 @@
 title = "About"
 +++
 
-Hi, I'm Jeremy Jung. 
+Am I asking the right questions?
 
-I'm having conversations about software development with folks to hear their practical experiences and stories.  If you prefer reading, I'm collecting notes, transcripts, and articles based on these conversations.
-
-If this is helpful to you or you have any suggestions, please [let me know](mailto:contact@softwaresessions.com).
+If you're enjoying the show or have a suggestion, feel free to let me know [say hello](mailto:contact@softwaresessions.com).
