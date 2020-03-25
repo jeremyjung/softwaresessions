@@ -38,6 +38,8 @@ We discuss:
 
 ### Transcript
 
+You can help edit this transcript at [GitHub](https://github.com/jeremyjung/softwaresessions/tree/master/content/episodes).
+
 <div class="transcript">
 
 **Jeremy** This episode. I'm talking to Federico Pereiro about his post on writing backends. It got a ton of attention on Hacker News and GitHub and I wanted to chat with him about it. 
@@ -56,7 +58,8 @@ So basically Frederick Brooks essentially says that conceptual integrity is let'
 
 And it's very related to how an architect or a group of architects can really understand the entire system and hold it in their heads. So I feel like that's one side of simplicity that is very important. And if I had to really narrow it down, it would be like the idea that I can understand the system in my head without records to paper or even to the code.
 
-And then of course in the details, I will have to get into the code and to the documentation as well. But. I understand the system and others can understand the system. 
+And then of course in the details, I will have to get into the code and to the documentation as well. But. I understand the system and others can understand the system.
+
 **Jeremy** You know, you're talking about the concepts that you're going to have in your head without even looking at the code, without even looking at, you know, documentation. Could you give me an idea of like, if you had an application, what are those concepts?
 
 **Federico** Hmm. It's a good question. Let me think. I really have to think about this so. Actually let me give you an example  from a tool that I'm writing right now, I'm writing, um essentially a lightweight framework for creating the front end of a web application, and I'm really trying to narrow down the core concepts that I'm going to be using. I'm seeing that it boils down to two things:
