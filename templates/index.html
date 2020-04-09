@@ -19,7 +19,7 @@
 		{% set social_description = config.description %}
 
 		{% if page %}
-			{% set social_title =  page.title ~ " | " ~ config.title %}
+			{% set social_title = page.title %}
 			{% if page.description %}
 				{% set social_description = page.description %}
 			{% endif %}

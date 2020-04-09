@@ -1,6 +1,6 @@
 {% extends "index.html" %}
 
-{% block title %}{{ config.title }} - {{ page.title }}{% endblock title %}]
+{% block title %}{{ page.title }}{% endblock title %}
 
 {% block body %}
   <article>
@@ -19,7 +19,7 @@
     {% if page.extra.episode_url %}
       <audio data-episode="8" controls="true" src="{{ page.extra.episode_url | safe }}">
         Your browser does not support HTML5 audio.
-      </audio> 
+      </audio>
     {% endif %}
   	  {% if page.content %}
         {{ page.content | safe }}
