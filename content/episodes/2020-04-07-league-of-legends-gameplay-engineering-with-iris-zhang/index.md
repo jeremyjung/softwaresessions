@@ -3,6 +3,8 @@ title = "League of Legends Gameplay Engineering with Iris Zhang"
 
 description = "Iris shares her experience working on backend services and gameplay at Riot Games"
 
+aliases = ["/episodes/gameplay-programming-at-Riot-games-with-iris-zhang"]
+
 [extra]
 episode_url = "https://media.transistor.fm/ab7a382f.mp3"
 +++
@@ -11,20 +13,20 @@ Iris Zhang is a gameplay engineer at Riot Games on the League of Legends Champio
 
 We discuss:
 
-- Working at Microsoft and Riot Games
+- The benefits of a CS education
+- The focus on tooling and code quality at Microsoft
 - Finding a role and team that fits you
-- Backend services vs gameplay engineering
-- Building features, testing, and debugging gameplay
+- Backend services and gameplay engineering at Riot Games
 - Using internal tools to create game logic
 
 ### Related Links:
 - [Personal Site](http://www.iriszhang.com/)
-- [@riotnyanbun](https://twitter.com/riotnyanbun)
+- [@Riotnyanbun](https://twitter.com/Riotnyanbun)
 - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (Book used by Microsoft team)
 - [Spring Framework](https://spring.io/) (Java web framework used by League of Legends)
 - [Chef](https://www.chef.io/products/chef-infra/) (Deployment tool used at Riot)
 - [Hazelcast](https://hazelcast.com/) (Cache that Riot Games switched to)
-- [What it's like to work on League of Legends](https://builtin.com/media-gaming/riot-games-technologists-working-league-of-legends)
+- [What it's like to work on League of Legends](https://builtin.com/media-gaming/Riot-games-technologists-working-league-of-legends)
 - [Sylas](https://na.leagueoflegends.com/en-us/champions/sylas/) (Champion that can steal ultimates)
 - [Clash](https://na.leagueoflegends.com/en/featured/clash#/) (Public facing mode worked on by backend team)
 
@@ -34,24 +36,23 @@ Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-a
 
 ### Transcript
 
+You can help edit this transcript at [GitHub](https://github.com/jeremyjung/softwaresessions/tree/master/content/episodes).
+
 <div class="transcript">
 
-**Jeremy** This is Jeremy Jung and you're listening to software sessions. This episode I'm talking to Iris Zhang, a gameplay programmer on the league of legends team at riot games.
+**Jeremy** This is Jeremy Jung and you're listening to Software Sessions. This episode I'm talking to Iris Zhang, a gameplay programmer on the League of Legends team at Riot Games.
 
 I grew up playing video games, and one of the reasons why I got interested in software development is because I wanted to make a game. Now, I never got to that point but Iris is one of the few people who made that dream come true.
 
 So I thought it would be fun to talk to somebody who made that jump. Someone who used to work on backend services and mobile apps who made the switch to games. Here's Iris.
 
-**Iris** I actually started playing league of legends I want to say nine or 10 years ago now, back in 2011 or so when I was working as a high school teacher in Philadelphia. And it was a really stressful job. I don't know if you've heard of Teach for America.
+**Iris** I actually started playing League of Legends I want to say nine or 10 years ago now, back in 2011 or so when I was working as a high school teacher in Philadelphia. And it was a really stressful job. I don't know if you've heard of Teach for America.
 
-They send young college grads to high need schools. And League of Legends was sort of my way of coping with my job, so to speak. I always grew up liking games and playing games. I played smash brothers with my friends all throughout middle and high school. And then, I got really obsessed with like text-based RPGs in high school especially, but I never considered it as a career. Uh, seriously until a game, like league of legends got very big, and I saw that people could make a career out of it. And, when I finally quit my job, I took a bit of a break from working in general, but I was really inspired by games like that, and I really thought that I could make a career out of it.
+They send young college grads to high need schools. And League of Legends was sort of my way of coping with my job, so to speak. I always grew up liking games and playing games. I played smash brothers with my friends all throughout middle and high school. And then, I got really obsessed with like text-based RPGs in high school especially, but I never considered it as a career. Uh, seriously until a game, like League of Legends got very big, and I saw that people could make a career out of it. And, when I finally quit my job, I took a bit of a break from working in general, but I was really inspired by games like that, and I really thought that I could make a career out of it. So that's when I decided I would give it a shot.
 
-So that's when I decided I would give it a shot.
+**Jeremy** How did you get your start or how did you decide what your next step should be?
 
-**Jeremy** How did you get your, your start or how did you decide what your next step should be?
-
-**Iris** Right. Well, at that point it was definitely a pipe dream. So I started by taking, local classes. I think I was in Philly at the time, so I took some classes in computer science at the local college and I really enjoyed it. And then I decided to take it more seriously by enrolling in a post baccalaureate program at Columbia University in New York City. And that's when it got really serious. I wanted to get the credits I needed to get a master's degree in computer science. My family background is Chinese and my parents were pushing me really hard if I were to make a career change, it has to be through academia or through like a degree.
-And they were sort of really onboard with the idea at the time too.
+**Iris** Right. Well, at that point it was definitely a pipe dream. So I started by taking, local classes. I think I was in Philly at the time, so I took some classes in computer science at the local college and I really enjoyed it. And then I decided to take it more seriously by enrolling in a post baccalaureate program at Columbia University in New York City. And that's when it got really serious. I wanted to get the credits I needed to get a master's degree in computer science. My family background is Chinese and my parents were pushing me really hard if I were to make a career change, it has to be through academia or through like a degree. And they were sort of really onboard with the idea at the time too.
 
 **Jeremy** It looked like you were actually doing work in games development and in mobile development when you started your masters.
 
@@ -66,7 +67,7 @@ And I, I just jumped on the opportunity. I just thought it was, it was so much f
 **Jeremy** It wasn't necessarily always just the technical skills you were learning, but it was getting exposure to people who worked in different fields.
 
 **Iris** Yeah, definitely um, though the technical skills I think are also very important. Like, I actually know somebody who didn't do the full master's program, and all they did was they took the baccalaureate degree and just started their own startup with that. And I think that worked for him because he only needed the fundamentals.
-And like learning the fundamentals is basically just a few classes like data structures and algorithms and advanced C plus plus.
+And like learning the fundamentals is basically just a few classes like data structures and algorithms and advanced C++.
 So, with those classes under your belt, you're pretty much past the bar as far as like, yes, I can now start working as a software engineer.
 
 But if like you wanted to be a serious computer scientist in the future, or get into fields that are more specialized, like machine learning or graphics or computer vision, or even research in the future, like I think that finishing out the degree unlocks those doors for you.
@@ -86,59 +87,57 @@ And like where they show up and like where they recruit. Like only schools like 
 
 **Jeremy** You started at Microsoft, you were working on, Azure, I believe, on backend services. Did it kind of align with what you were expecting or what was your overall feeling on that, that position?
 
-**Iris** Yeah. It was really interesting because I had no idea what to expect. When I graduated Columbia, I had worked at one startup making,  iPad games, and I had worked at another startup called paperless post in New York city, and that's where I got exposure to , iOS development. At that point, I had really no, backend services experience.
+**Iris** Yeah. It was really interesting because I had no idea what to expect. When I graduated Columbia, I had worked at one startup making, iPad games, and I had worked at another startup called paperless post in New York city, and that's where I got exposure to iOS development. At that point, I had really no backend services experience.
 
-For some reason, this team made me an offer and I was like, I just want to try this out and see if I like it or not. and I don't know what the reputation now is in, in school, but I remember when I was there, I had this impression that the backend devs were the most serious. They were, the developers developer, you know, like they had, all the hard problems like, to solve.
+For some reason, this team made me an offer and I was like, I just want to try this out and see if I like it or not. and I don't know what the reputation now is in school, but I remember when I was there, I had this impression that the backend devs were the most serious. They were the developer's developer, you know, like they had all the hard problems to solve.
 
-Whereas like client work, like iOS and a web dev or any kind of UX work was considered lesser, or like, Oh, like that's easy. Anyone can do that, but like backend that's very serious. So it was kind of like a challenge to myself too, that I can do it and prove myself in this field. So I kind of just went for it.
+Whereas client work like iOS and web dev or any kind of UX work was considered lesser, or like, Oh, like that's easy. Anyone can do that, but like backend that's very serious. So it was kind of like a challenge to myself too, that I can do it and prove myself in this field. So I kind of just went for it.
 
-I was on a team of about, 18 engineers and we were divided into three pods essentially, and each of its pod kind of, manage its own work. But, we shared the same backlog of tasks. And I think the whole entire team struggled as a whole to, figure out what processes were most efficient for planning our work.
+I was on a team of about 18 engineers and we were divided into three pods essentially, and each pod kind of managed its own work. But we shared the same backlog of tasks. And I think the whole entire team struggled as a whole to figure out what processes were most efficient for planning our work.
 
-Aside from that too, as an individual contributor, I felt very, I felt very like I was a cog in this big machine that was Microsoft in this product. I was working on this product called Azure Information Protection. It's a service that runs inside of both outlook and it's available as a third party API for people to call. It's basically an end to end encryption service for documents from Microsoft documents, like text files, word files, emails, whatever. And I felt very separated from the actual end product  and what that was, I feel like I spent most of my time trying to understand business logic and like how this product was actually being used because I was so far removed from, from it as a developer.
+Aside from that too, as an individual contributor, I felt very like I was a cog in this big machine that was Microsoft in this product. I was working on this product called Azure Information Protection. It's a service that runs inside of both outlook and it's available as a third party API for people to call. It's basically an end to end encryption service for documents from Microsoft documents, like text files, word files, emails, whatever. And I felt very separated from the actual end product  and what that was, I feel like I spent most of my time trying to understand business logic and like how this product was actually being used because I was so far removed from, from it as a developer.
 
-And the, the development that I was doing was very, very specific, like, fix this particular error message that was showing up erroneously, in this backend call. Like, things like that, or like, fix this integration test. that's breaking, you know, like two times, two out of three times that we run it for whatever reason.
+And the development that I was doing was very, very specific, like, fix this particular error message that was showing up erroneously, in this backend call. Like, things like that, or like, fix this integration test that's breaking, you know, like two out of three times that we run it for whatever reason.
 
-I think I probably spent the first three months, like, just fixing our tests framework. So the work itself was quite specific Like I felt like I lost a lot of agency over my work actually. Going from somewhere where I could like play around with buttons all the time and like see immediately the results of, what I was coding.
+I think I probably spent the first three months just fixing our test's framework. So the work itself was quite specific Like I felt like I lost a lot of agency over my work actually. Going from somewhere where I could like play around with buttons all the time and like see immediately the results of what I was coding.
 
 Instead, I was like, I have no idea what I did today. Then make, you know, this one error log, like now it just like error output correctly.
 
-It was my first exposure to backend work and I think I would have felt very differently if I was on a team that had more agency. But yeah, a lot of the struggle for me was like losing that visual aspect of programming 
+It was my first exposure to backend work and I think I would have felt very differently if I was on a team that had more agency. But yeah, a lot of the struggle for me was like losing that visual aspect of programming.
 
-**Jeremy** yeah, because the projects that you had worked on previously, whether it's a an iOS application or it's a game, it sounds like it's the sort of thing where you make a change and then it's small enough where you can run that project and see exactly the change that you made.
+**Jeremy** Yeah, because the projects that you had worked on previously, whether it's a an iOS application or it's a game, it sounds like it's the sort of thing where you make a change and then it's small enough where you can run that project and see exactly the change that you made.
 
 **Iris** Exactly.
 
- **Jeremy** Like you were saying, you know, you feel like kind of like a cog, right, where you're fixing up this little thing, but, you don't really have the big picture. And so it's kind of hard to stay, stay motivated. 
+ **Jeremy** Like you were saying, you know, you feel like kind of like a cog, right, where you're fixing up this little thing, but you don't really have the big picture. And so it's kind of hard to stay motivated.
 
 **Iris** Yeah, absolutely. There were a lot of positives of that first job like understanding how a team like that works at that scale and working with very, very excellent developers who had very high standards for how code should be and how services should be managed and operated and observed.
 
 That was something that I think will always stay with me. Like I, don't know if you've heard of the book clean code, but that was something that was like drilled into me at Microsoft and pretty much like nothing will pass code review unless it like stuck very strongly to those standards. And I think teams are different too.
 
-Like I think my team was particularly a stickler for things like that and it gave me a really good understanding of testing frameworks too. Like I, I learned The difference between unit tests and integration tests and end to end tests and what all those functions serve. and then also what a really good, CDCI like pipeline looks like, because at the time Microsoft was still, a lot of teams had their own bespoke solutions, but they had all moved to this thing called one build at Microsoft. And just seeing that work across all different teams at Microsoft with all different products and having a work so seamlessly, like that really spoiled me actually for the future.
-Yeah.
+Like I think my team was particularly a stickler for things like that and it gave me a really good understanding of testing frameworks too. Like I learned the difference between unit tests and integration tests and end to end tests and what all those functions serve. and then also what a really good, CDCI like pipeline looks like, because at the time Microsoft was still... a lot of teams had their own bespoke solutions, but they had all moved to this thing called one build at Microsoft. And just seeing that work across all different teams at Microsoft with all different products and having a work so seamlessly, like that really spoiled me actually for the future. Yeah.
 
-**Jeremy** So, so it sounds like big takeaways or the big things that you did learn were, how to test things and why you test things, how to work with, continuous integration where you check in your code and things kind of get built and tested on their own. and also, I guess just how to build things with reliability in mind, cause I'm assuming what you were working on, if it didn't work, then, people would be freaking out. So they, you know, they had a very strict process there.
+**Jeremy** So it sounds like big takeaways or the big things that you did learn were: how to test things and why you test things, how to work with continuous integration where you check in your code and things kind of get built and tested on their own. And also, I guess just how to build things with reliability in mind, cause I'm assuming what you were working on, if it didn't work, then, people would be freaking out. So they had a very strict process there.
 
-**Iris** Yeah. It was very strict process. It exposed me to like what good looks like as far as engineering tools and engineering management.  I'm comparing it now to like every place where I've worked at Microsoft definitely had the most mature tools when it came to engineering
+**Iris** Yeah. It was a very strict process. It exposed me to like what good looks like as far as engineering tools and engineering management.  I'm comparing it now to like every place where I've worked at Microsoft definitely had the most mature tools when it came to engineering
 
 **Jeremy** Yeah. And before, at the smaller companies you worked at was it kind of you know, you would write some code and then you'd run it at your desk and just check it in and just hope things were good?
 
 **Iris** That was the case at my startup, it was not the case at paperless. Like they did also have CDCI I think we use Jenkins. and everything was checked in through GitHub and, Oh, we, we had testing frameworks there too, but it was all on a much smaller scale, much, much smaller.
-And if things would go would go wrong. Like. Those are third party applications, so we would just, you know, call them. Whereas at Microsoft, everything was in house, the people we'd call up were just people who are in the next building over  (laughs) 
 
-**Jeremy** After the experience working on smaller projects and then working at Microsoft your next step was working at Riot. Knowing that you were working on a large backend project and you kind of weren't too happy about the fact that you couldn't really see the things that you were working on and the end product, what made you decide that you wanted to go to Riot and, and work on backend services there?
+And if things would go would go wrong. Like. Those are third party applications, so we would just, you know, call them. Whereas at Microsoft, everything was in house, the people we'd call up were just people who are in the next building over (laughs).
 
-**Iris** Uh, remember how he said, like 10 years ago I started playing league of legends? Well, it was, it was no longer a pipe dream  (laughs) .
+**Jeremy** After the experience working on smaller projects and then working at Microsoft your next step was working at Riot. Knowing that you were working on a large backend project and you kind of weren't too happy about the fact that you couldn't really see the things that you were working on and the end product, what made you decide that you wanted to go to Riot and work on backend services there?
 
-So, I think. I had clicked on a LinkedIn ad one day,  that riot had put out and I didn't really think anything of it. It was just a click to like, share my resume. And then I had a message from a recruiter, my inbox thing, like, Hey, we'd like to invite you to apply for Riot.
+**Iris** Uh, remember how he said, like 10 years ago I started playing League of Legends? Well, it was no longer a pipe dream (laughs).
 
-And I was like, Whoa, this is. This is real. This is happening. so yeah, I just like sort of on a whim, went through that process. At the same time, I was getting agitated with, my team at Microsoft and I was really, I was looking for a change.  Not really because of the work and the product that I was working on.
+So, I think... I had clicked on a LinkedIn ad one day that Riot had put out and I didn't really think anything of it. It was just a click to like, share my resume. And then I had a message from a recruiter in my inbox saying like, Hey, we'd like to invite you to apply for Riot.
 
-I think I could have been motivated to stay because I did feel like I was learning a lot and like seeing what good looked like. At the same time though, um. The dynamics on my team were not the healthiest. and at the time, I think Microsoft was undergoing a cultural transformation, starting with Satya, the CEO, trying to instill values like growth mindset in a lot of the teams.
+And I was like, Whoa, this is. This is real. This is happening. So yeah, I just like sort of on a whim, went through that process. At the same time, I was getting agitated with my team at Microsoft and I was looking for a change. Not really because of the work and the product that I was working on. I think I could have been motivated to stay because I did feel like I was learning a lot and like seeing what good looked like. At the same time though, the dynamics on my team were not the healthiest. And at the time, I think Microsoft was undergoing a cultural transformation, starting with Satya, the CEO, trying to instill values like growth mindset in a lot of the teams.
 
-But, it was still not there like leadership was preaching, these things, but middle management and depending on the team that you, you're, you were on, like that wasn't the reality of the day to day. So we still had some very toxic senior, I would say engineers. Just, I don't know. They had a lot of ego. They could not listen to feedback. And it was not an open feedback culture. Like any sort of feedback that you had, you had like you went through the manager and the manager would go take it to that person and they may or may not even take it very well. If they didn't like it would have come out in a team meeting, like in front of everybody instead of like done privately.
+But, it was still not there like leadership was preaching, these things, but middle management and depending on the team that you were on, like that wasn't the reality of the day to day. So we still had some very toxic senior, I would say engineers. Just, I don't know. They had a lot of ego. They could not listen to feedback. And it was not an open feedback culture. Like any sort of feedback that you had, you had like you went through the manager and the manager would go take it to that person and they may or may not even take it very well. If they didn't like it would have come out in a team meeting, like in front of everybody instead of like done privately.
 
-So things weren't great and I just ultimately decided that instead of staying at this team where I didn't feel like I would have much of an influence to, to change the culture. , I wanted to join a company where I felt the culture fit  me better.  So I think that's why ultimately I went with riot even though like it was still backend work. I also really loved the product and understood it, so that was a huge motivator as well. It was just sort of a woodwind in that scenario.
+So things weren't great and I just ultimately decided that instead of staying at this team where I didn't feel like I would have much of an influence to, to change the culture. , I wanted to join a company where I felt the culture fit  me better.  So I think that's why ultimately I went with Riot even though like it was still backend work. I also really loved the product and understood it, so that was a huge motivator as well. It was just sort of a win-win in that scenario.
 
 **Jeremy** Let's say you would make a change on the back end team, is that something that you could visibly see in the game or is it kind of more like you just knew that you had done something?
 
@@ -148,44 +147,41 @@ So it's like you really care about the players, as a backend developer, if you m
 
 One of the cool projects that my coworkers. I heard from them because they've worked on it that they will have worked on on this back end team with something. I don't know if you're familiar with league, but like you can level up until as a summoner. You know, you can acquire experience until you're level 30.
 
-And so they worked on the project to undo that level cap and make it like infinite. So now you can go beyond level 30.  So that was a huge backend project for them. And they had a lot of fun doing that. 
+And so they worked on the project to undo that level cap and make it like infinite. So now you can go beyond level 30.  So that was a huge backend project for them. And they had a lot of fun doing that.
 
-And then there was another project that, people were working on called clash and clash is like a 5 v 5 tournament style. Like you get four of your friends together and you play, and then you get like rewarded for how well you do in the tournament. And it's like a Saturday, Sunday thing and unfortunately that project kind of crashed and burned once in 2016. And like they tried to do it once in 2017 They're finally beta testing it in regions. And now it's like 2020, so they're finally shipping it  (laughs) . 
+And then there was another project that, people were working on called clash and clash is like a 5 v 5 tournament style. Like you get four of your friends together and you play, and then you get like rewarded for how well you do in the tournament. And it's like a Saturday, Sunday thing and unfortunately that project kind of crashed and burned once in 2016. And like they tried to do it once in 2017 They're finally beta testing it in regions. And now it's like 2020, so they're finally shipping it  (laughs) .
 
 But yeah. Um, so it's like projects like that, that only come around once every few years or so. Really. aside from that, it's like if you mess up, then players can't log in, but otherwise your work is pretty invisible still. You are still just managing like, looking at errors and trying to figure out what happened. Why couldn't people log in? Why couldn't people buy their skins? Why couldn't you know... things like that
 
 **Jeremy** You don't really get celebrate new features very often, but what you experience is when something bad happens.
 
-**Iris** Exactly 
+**Iris** Exactly.
 
 **Jeremy** You don't get to experience the joy of the wins.
 
-**Iris** Yeah 
+**Iris** Yeah.
 
 **Jeremy** That's a bummer.
 
-**Iris** Definitely. It definitely takes a special kind of person to enjoy being a backend dev,  in speaking with lots of back and devs over the years at Riot and at Microsoft and, in general, what, what I hear people talk about enjoying the most is like The detective aspect of, programming, the on call and being that like first responder type person.
+**Iris** Definitely. It definitely takes a special kind of person to enjoy being a backend dev. In speaking with lots of backend devs over the years at Riot and at Microsoft and in general, what I hear people talk about enjoying the most is like the detective aspect of programming, the on call and being that like first responder type person.
 
-As a backend developer on league of legends. In many ways, we played the SRE role more than we did the software engineer role. Um,  we, we did have features that we had to deliver on and tickets that we had to close. But for the most part, I would say we were mostly firefighting. Like the on-call burden was pretty heavy.
-and diagnosing. Properly. What went wrong with our services? Was like, I would say more than 40% of the job.
+As a backend developer on League of Legends in many ways, we played the SRE role more than we did the software engineer role. We did have features that we had to deliver on and tickets that we had to close. But for the most part, I would say we were mostly firefighting. Like the on-call burden was pretty heavy and diagnosing properly what went wrong with our services? Was like, I would say more than 40% of the job.
 
 **Jeremy** Yeah, that's pretty high. And it sounds like, you know, the stakes are pretty high too, so it sounds, it could be pretty stressful.
 
-**Iris** Yeah. It was incredibly stressful. In comparison to my on-call at Microsoft league of legends on call is, Oh, I would not wish that upon anyone  (laughs) .
+**Iris** Yeah. It was incredibly stressful. In comparison to my on-call at Microsoft League of Legends on call is, Oh, I would not wish that upon anyone (laughs).
 
 **Jeremy** So, you were working on a product that you really liked, but the actual work like you said, it was firefighting. You didn't really get to see the end results other than, trying to fix a problem. Even though you were working in games, you kind of had some of the same, issues that you had back at Microsoft.
 
-**Iris** Yeah. And in many ways, Riot is a less mature tech company than Microsoft is, obviously, because it's not a tech company. At the end of the day, it's a game company. We're, we're in the business of making games, not tech tools. And calling back to what I was saying about Microsoft and how the tech tools are incredibly mature, like when we were debugging something, everything went into like a tracer that would post the logs into a system that I could easily query and find exactly the correlation ID of the particular call that like results in this error and then isolate it to all the other service calls that cause this particular, error. 
+**Iris** Yeah. And in many ways, Riot is a less mature tech company than Microsoft is, obviously, because it's not a tech company. At the end of the day, it's a game company. We're, we're in the business of making games, not tech tools. And calling back to what I was saying about Microsoft and how the tech tools are incredibly mature, like when we were debugging something, everything went into like a tracer that would post the logs into a system that I could easily query and find exactly the correlation ID of the particular call that like results in this error and then isolate it to all the other service calls that cause this particular error.
 
-But at riot, we were like manually parsing through logs. Like there were, there was nothing. Our tools are very immature and we just like didn't have the infrastructure in place to properly diagnose anything.
+But at Riot, we were like manually parsing through logs. Like there were, there was nothing. Our tools are very immature and we just like didn't have the infrastructure in place to properly diagnose anything.
 
 And so, I learned a ton about like VMs and I, I learned a ton about how like Docker instances work and like all these things, mostly because like, I had to manually, navigate all of the hardware  (laughs)  that was like hosting our services and like deploying it myself through this like weird Merlin...
 
-We call it Merlin. It was like, just like literally something we wrote on top of chef 
-for league of legends. Um, and so like, doing all of that yourself, it ends up being. Quite painful. and it's not as fun to like, play detective when you feel like you are limited by the tools that you have.
+We call it Merlin. It was just like literally something we wrote on top of chef for League of Legends. Um, and so like, doing all of that yourself, it ends up being quite painful and it's not as fun to like play detective when you feel like you are limited by the tools that you have.
 
-**Jeremy** You're logging into production servers and when you're trying to track down a bug, you know, you have to find the right server and then.
-Find which server from that, you know, to get to the next step and you're kind of jumping from server to server to, to kind of trace what happened?
+**Jeremy** You're logging into production servers and when you're trying to track down a bug, you know, you have to find the right server and then find which server from that, you know, to get to the next step and you're kind of jumping from server to server to kind of trace what happened?
 
 **Iris** Yes, exactly. And a lot of times it was, it wasn't entirely clear, like what service went down, so trying to hunt down like the particular server and the host that,  was a troublesome one. Like that in itself took a long time. Whereas I think, uh, Microsoft, like all of that would have been traced already and then like dumped to you in a bug or ticket that like landed on your desktop.
 
@@ -193,9 +189,9 @@ Like, Oh, okay, I don't have to go hunting for those things. All those things ar
 
 **Jeremy** Right. Can you kind of give an idea of the types of code bases you were working on, like when you were trying to troubleshoot what types of applications where these?
 
-**Iris** So league of legends, the backend service is mostly a monolith that's written in Java and Spring. What we call the platform was like the monolithic platform that you would log into when you start the client for league of legends. And that just like it had so much crud in it in terms of like what it would do.
+**Iris** So League of Legends, the backend service is mostly a monolith that's written in Java and Spring. What we call the platform was like the monolithic platform that you would log into when you start the client for League of Legends. And that just like it had so much crud in it in terms of like what it would do.
 
-We had tried to separate out the services into its own microservices. I think that's like a trend that like every tech company, every company that uses tech has like migrated towards in, in recent years. Unfortunately with league of legends because I think it was written really quickly and people wanted it out the door they just put everything into one monolith. 
+We had tried to separate out the services into its own microservices. I think that's like a trend that like every tech company, every company that uses tech has like migrated towards in, in recent years. Unfortunately with League of Legends because I think it was written really quickly and people wanted it out the door they just put everything into one monolith.
 
 And so I think parts of the store were still in the platform. Parts of accounts were still on the platform. matchmaking, like, like queuing up with your friends was in there and like all these different things had its hand in the platform.
 
@@ -217,23 +213,23 @@ So because our services like we expect it to be up constantly running. If we swi
 
 I don't know if you're familiar with the service hazelcast, but that's like what we were trying to switch it to. and hazelcast was like, advertises itself as like a drop in replacement for this particular cache that we had been using. And it's also open source so it would be free for us to use, um, and we'd only have to pay for support.
 
-So that was like a huge win in our books. But yeah it was a lot and all of our testing around doing this project was making sure that those original calls, once we switched a particular cache over to hazelcast, that like those calls still worked and that it scaled appropriately to scaling is another issue that backend developers have to deal with. Um, nothing works unless it's at scale for a backend developer 
+So that was like a huge win in our books. But yeah it was a lot and all of our testing around doing this project was making sure that those original calls, once we switched a particular cache over to hazelcast, that like those calls still worked and that it scaled appropriately to scaling is another issue that backend developers have to deal with. Um, nothing works unless it's at scale for a backend developer
 
-**Jeremy** Especially at the scale of, league of legends.
+**Jeremy** Especially at the scale of, League of Legends.
 
-**Iris** Yeah, exactly
+**Iris** Yeah, exactly.
 
 **Jeremy** Did you reach a point  the work you were doing, you sort of decided like, Hmm, maybe this is, maybe this is not for me and I want to go find something else to do. How was that process for you?
 
-**Iris** Yeah. So at some point I began to, internally, reach out to people, working on gameplay, because I had a feeling that my passion didn't lie in backend. In speaking with people who did like it, I really don't care about services at scale. it didn't really satisfy me that like a request like now, 50,000 people can concurrently request a service  (laughs) like that. That seems to like really excite some people. And I just was not a developer who was very excited about that. 
+**Iris** Yeah. So at some point I began to, internally, reach out to people, working on gameplay, because I had a feeling that my passion didn't lie in backend. In speaking with people who did like it, I really don't care about services at scale. it didn't really satisfy me that like a request like now, 50,000 people can concurrently request a service  (laughs) like that. That seems to like really excite some people. And I just was not a developer who was very excited about that.
 
 So, the things that I was excited about and like, I harken back to my game dev days and, my, iOS app days is like, I really love delighting end users and players with like visual things that like, feel buttery, smooth, whether that's like a button click or whether that's like something in the game that like delights them and excites them. It just looks really cool. The visual aspect of programming was something that I really had missed.
 
 And thinking back to the graphics course that I took at Columbia too. Um, what really excited me about that was just how I miss resource constrained environments and programming. Like with a managed code like Java and most backend services, you don't really care about memory at all. At least locally on the host. It's like you have, you have loads of memory that's not an issue. Like you, you care about serving like you care about network calls and making sure that network calls are, as fast as possible. and that you, you minimize network calls. But that's, that's happening at scale. That's not really happening on the scale of the device.
 
-And that's something I missed really from my mobile days too. It's like having that, memory constrained device,  and working with memory management
+And that's something I missed really from my mobile days too. It's like having that, memory constrained device, and working with memory management.
 
-**Jeremy** So when you switched roles, you joined the, the champions engineering team, could you kind of explain what that team works on?
+**Jeremy** So when you switched roles, you joined the champions engineering team, could you kind of explain what that team works on?
 
 **Iris** Sure. We are embedded on a team of VFX artists, animators. Concept, artists, character artists, and game designers. We are working on the tools that enable other creatives to create the best champs.
 
@@ -257,17 +253,17 @@ We also own the code, for these tools and improve upon it so that we enable peop
 
 So for example I don't know if you're familiar with the game, but there was a champion that was recently I think he was in the past six months or so, that came out called Sylas, in League of Legends.
 
-And Sylas is a champion that that steals spells from other champions in the game. And for a champion like this to exist, all of the spells and all of the champions within league of legends had to be basically (laughs) rewritten to use an external, like a meta system so that Sylas could steal their ultimate spell. 
+And Sylas is a champion that that steals spells from other champions in the game. And for a champion like this to exist, all of the spells and all of the champions within League of Legends had to be basically (laughs) rewritten to use an external, like a meta system so that Sylas could steal their ultimate spell.
 
 And so this, this took a lot of effort from engineering to like propose a solution. They basically had to migrate all of the data from old champions over to this solution, while also keeping in mind that like, this is such a big chunk of work that like, it had to be timed correctly and scoped correctly in order to do it.
 
-But, they were so excited for this new possibility that it was decided, like, yes, this is worth the engineering effort to overhaul all of the champions in league of legends just to enable this. 
+But, they were so excited for this new possibility that it was decided, like, yes, this is worth the engineering effort to overhaul all of the champions in League of Legends just to enable this.
 
-Another example: I'm working on a champion right now. I'm not at Liberty to say what they're all about, because it hasn't been announced yet. But one of the parts of the champion, that was requested of him from the tech side was we wanted to show like another UI bar on his health bar that would show like a timed spell effect. 
+Another example: I'm working on a champion right now. I'm not at Liberty to say what they're all about, because it hasn't been announced yet. But one of the parts of the champion, that was requested of him from the tech side was we wanted to show like another UI bar on his health bar that would show like a timed spell effect.
 
 **Jeremy** This is above the character?
 
-**Iris** Yeah, this is above the character and champions already have like health bars and they have mana bars but now we wanted to show like an additional thing and we had to push back and be like, unfortunately, UI is one of the hardest things that we can change in league of legends. And if it's only going to be used by one champion, it's just not worth engineering effort to write something like this.
+**Iris** Yeah, this is above the character and champions already have like health bars and they have mana bars but now we wanted to show like an additional thing and we had to push back and be like, unfortunately, UI is one of the hardest things that we can change in League of Legends. And if it's only going to be used by one champion, it's just not worth engineering effort to write something like this.
 
 So I had to convince the designer and the artists and the animator like, we need to think of a different solution to indicate that time to spell, whether it's through VFX or through animation, like I think there's a different way we can address that problem. So the designer had to go back to the drawing board and think about new ways to to solve this problem.
 
@@ -284,7 +280,7 @@ And you saying something like: Well, we could do it, but it's going to take this
 
 **Iris** Yeah, absolutely. I will say the major difference between working on a gameplay team at Riot as compared to a backend team is like, working on a backend team is basically like working at Amazon or working at Microsoft  (laughs). But in, in like a game company. Right. Um, and maybe you lack the tools, but like, it really does feel like you're part of a software team and your decisions are basically, oh, how do I scope these engineering tasks?
 
-Whereas now I would say 55% of my day isn't actually coding anymore. It's actually like talking with designers and artists to figure out like, what is, what is it that you want? Like help me help you achieve what it is that you want. 
+Whereas now I would say 55% of my day isn't actually coding anymore. It's actually like talking with designers and artists to figure out like, what is, what is it that you want? Like help me help you achieve what it is that you want.
 
 **Jeremy** That's really cool. You were talking about how working on backend services was, was very similar to working at Microsoft, working at Amazon.  How is gameplay programming different than the backend web development you were doing?
 
@@ -292,11 +288,11 @@ Whereas now I would say 55% of my day isn't actually coding anymore. It's actual
 
 And it's so complicated, like you really can't be clueless about how the game works. Otherwise the code would just make no sense to you at all. So that's kind of. I would say the biggest hurdle, but also why the requirement that you must play the game is one that makes sense to me.  And then aside from that, the programming, I will say is pretty wild, wild west.
 
-Like we do try to like follow standards. we use C plus plus across the game engine with a smattering of Lua. we're trying to move away from Lua actually  (laughs) , and convert most of that over to C plus plus.  There are pretty strict standards, with C plus plus, I think, we're debating right now whether we should,  keep using our own proprietary, formatter or the clang formatter, and things like that.
+Like we do try to like follow standards. we use C++ across the game engine with a smattering of Lua. we're trying to move away from Lua actually (laughs), and convert most of that over to C++.  There are pretty strict standards, with C++, I think, we're debating right now whether we should,  keep using our own proprietary, formatter or the clang formatter, and things like that.
 
 So, there there are way less, I would say, game programmers at Riot than there are like backend services programmers at Riot. Um, so we are a small community, but we're getting there in terms of like setting best practice and standards and things like that.
 
-**Jeremy** It's an interesting contrast from, you know, your time at Microsoft where you said people were really into clean code and these processes and I guess games in general I feel like are probably more loose, I would think.
+**Jeremy** It's an interesting contrast from, you know, your time at Microsoft where you said people were really into clean code and these processes and I guess games in general I feel like are probably more loose I would think.
 
 **Iris** Yeah. It's more about like what can you push the code to do and less about like how does your code look and how is it going to integrate into everything else? Because truthfully, I do a lot of prototyping. A lot of that is throwaway work that's not going to make it into the actual code base of the game itself.
 
@@ -308,50 +304,49 @@ For me, I think I'm going to gravitate towards graphics cause that's what I love
 
 **Iris** Yeah. Actually, that's interesting because when I applied to this position, I was worried about that. I was worried that I wouldn't be able to contribute as much, but what I actually found was I took to it relatively quickly. Because I had that past experience working on games, but also because at the end of the day, code is code like code kind of works one way and not the other.
 
-So all of my skills, learning how to debug, knowing how to dig around and unfamiliar code base and familiarize yourself with it. Those skills will help in any situation including gameplay. 
+So all of my skills, learning how to debug, knowing how to dig around and unfamiliar code base and familiarize yourself with it. Those skills will help in any situation including gameplay.
 
-**Jeremy** You have a feature, like having an ability that takes away other champions spells, for example. how do you even get started? Like knowing where to look within the code base. If you can't understand everything from the start how do you even get pushed into the right direction? 
+**Jeremy** You have a feature, like having an ability that takes away other champions spells, for example. how do you even get started? Like knowing where to look within the code base. If you can't understand everything from the start how do you even get pushed into the right direction?
 
 **Iris** Yeah, absolutely. So, first you lean on your non-engineering experts people who are familiar with their craft. A lot of the tech designers and tech artists at Riot are fairly technical themselves. And the only thing is they don't have access to the code, but they can read it and then they can point you in the right direction and generally they'll tell you like: Oh, this is related to that system. And you can just like do a search of the code base of that system and you'll probably find that thing that you're looking for. Um, I also work on a team of four other engineers, and so as a team, we were able to help each other with our tasks all the time.
 
-**Jeremy**  At Microsoft for example, you were talking about how there is a big focus on, on testing. How does testing in a gameplay environment work?
+**Jeremy**  At Microsoft for example, you were talking about how there is a big focus on testing. How does testing in a gameplay environment work?
 
 **Iris** Yeah, that is very interesting. There are very few tests now, and I think there's more of a reliance on our QA.  But it's a back and forth collaboration. We have a very strong relationship with QA.  Basically, when a champion is designed and has been scripted by the designer, we actually do a process where QA will take the champion at that point and run them through a whole bunch of tests, like manual tests. They actually hire vendors to help them do this, and then they'll serve us up all of the bugs. And so we'll have like a giant list of like bug backlogs and now it's on me as engineer to go through and like try to figure out what's going on in this. So it's actually a very collaborative, multi-disciplinary process for testing.
 
-**Jeremy**  When I think about traditional backend or front end development, if there's a bug, there's the ability to debug, right? To like kind of step through the code.
-Um, are you able to also do that with like a running league of legends game?
+**Jeremy**  When I think about traditional backend or front end development, if there's a bug, there's the ability to debug, right? To like kind of step through the code. Are you able to also do that with like a running League of Legends game?
 
-**Iris** Yes, we absolutely are in, in fact, the tool that designers use to script the, the game logic block builder actually has the ability to step through that thing too, to debug like: Oh, okay, this is the code that is now running. Even though it looks like a drag and drop interface you can still debug through that too. 
+**Iris** Yes, we absolutely are in, in fact, the tool that designers use to script the, the game logic block builder actually has the ability to step through that thing too, to debug like: Oh, okay, this is the code that is now running. Even though it looks like a drag and drop interface you can still debug through that too.
 
-**Jeremy** Hmm. So this, block builder, you were saying it's kind of like writing a script and, is that defining like the behavior of, of spells and different actions in the game?
+**Jeremy** Hmm. So this, block builder, you were saying it's kind of like writing a script and, is that defining like the behavior of spells and different actions in the game?
 
-**Iris** That's right
+**Iris** That's right.
 
-**Jeremy** And they can, they can load those in, without ever having to actually modify source code? That's pretty cool. Do you have like an example of when you would have a bug and what your approach would be to narrowing down how to fix it?
+**Jeremy** And they can load those in without ever having to actually modify source code? That's pretty cool. Do you have like an example of when you would have a bug and what your approach would be to narrowing down how to fix it?
 
 **Iris** Yeah, absolutely. I'll give an example. We are in the process of trying to redo like an existing champion in the game right now. So I've been tasked to like help them fix the bugs before this champion re-releases. So he came back with a bug where he creates like a clone of himself and that clone could do damage to other enemies.
 
-And then the turret for some reason  we have towers in the game that like hit you. And for some reason it wasn't aggroing correctly onto this champion when his clone was doing damage. So somewhere in the logic he was creating a clone. This clone was not affecting the turret logic the way we want it to. So, when I received this bug, the first thing I do is I try to repro it within league of legends. Once I can repro it, I start to put break points on where I think in the code this might affect and I could do it either from script, so I could start with the script. And I did think it was like a scripting thing.
+And then the turret for some reason  we have towers in the game that like hit you. And for some reason it wasn't aggroing correctly onto this champion when his clone was doing damage. So somewhere in the logic he was creating a clone. This clone was not affecting the turret logic the way we want it to. So, when I received this bug, the first thing I do is I try to repro it within League of Legends. Once I can repro it, I start to put break points on where I think in the code this might affect and I could do it either from script, so I could start with the script. And I did think it was like a scripting thing.
 
 Our scripter our block builder actually allows us to put debug statements into the code, into, the game. So like, when things are happening, like a whole bunch of debug statements, will just start like popping up in the game. and that will tell you like the logic flow of like, what's actually happening.
 
-And you're like, Oh, okay. So this thing happened, this thing. Didn't happen, but it should have happened. Why is that? And then from there you can attach the league of legends client to the process that is running in like your visual studio when you're debugging like C plus plus.
+And you're like, Oh, okay. So this thing happened, this thing. Didn't happen, but it should have happened. Why is that? And then from there you can attach the League of Legends client to the process that is running in like your Visual Studio when you're debugging like C++.
 
 And now you're like taking it to actual game code game engine code and figuring out like, well, what's happening here? And from there, hopefully you can narrow down where in the code in the logic flow. It's breaking down and make the change.
 
 **Jeremy** It sounds like the way you might narrow down something on a front end application, it's just that it happens to be 3D game running at 140 frames a second or whatever.
 
-**Iris** Exactly. Yeah.  (laughs)  obviously all games have this, but league of legends is especially server deterministic, so there's a game server running. There's also a game client running, and sometimes your bug is happening in the server other times it's in the client. But for the most part it's usually the server because league of legends is very server deterministic.
+**Iris** Exactly. Yeah.  (laughs)  obviously all games have this, but League of Legends is especially server deterministic, so there's a game server running. There's also a game client running, and sometimes your bug is happening in the server other times it's in the client. But for the most part it's usually the server because League of Legends is very server deterministic.
 
 **Jeremy** Right the server has to be the source of truth since it's a multiplayer game.
 
 **Iris** Exactly.
 
-**Jeremy** Do you have a way of sort of setting up, I'm going to have these champions on this team, these champions on this team, and these are the conditions of, know, the currently playing games. So, that you can try and get your, your perfect reproduction scenario?
+**Jeremy** Do you have a way of sort of setting up, I'm going to have these champions on this team, these champions on this team, and these are the conditions of, know, the currently playing games. So, that you can try and get your perfect reproduction scenario?
 
-**Iris** Absolutely. we have this in house tool called launcher, and we can actually launch, multiple instances of the game simulating different players. that's why we need our machines to be quite powerful as we need to make sure we have the memory to be able to do that  (laughs)  because,  a lot of issues actually happen.
+**Iris** Absolutely. we have this in house tool called launcher, and we can actually launch multiple instances of the game simulating different players. that's why we need our machines to be quite powerful as we need to make sure we have the memory to be able to do that (laughs)  because, a lot of issues actually happen.
 
-Not on the, like, you know, multiple players playing level. But because league is such a complicated game with so many champions, so many items, combinations of whatever, a lot of issues actually happen on the data layer. And so we have a really complicated way of managing data within the game, like what all loaded in, like who are the characters that are playing, like what items do they get and whatever. Like all these things have to be loaded up to the right, data layer. so to speak. And so when content creators like changed stuff, in data future, for example, like that's like the stuff that's going into like future versions of the game.
+Not on the multiple players playing level. But because league is such a complicated game with so many champions, so many items, combinations of whatever, a lot of issues actually happen on the data layer. And so we have a really complicated way of managing data within the game, like what all loaded in, like who are the characters that are playing, like what items do they get and whatever. Like all these things have to be loaded up to the right, data layer. so to speak. And so when content creators like changed stuff, in data future, for example, like that's like the stuff that's going into like future versions of the game.
 
 Or we could like switch layers and say, okay, let's look at what's on release right now. Like what's out there in the, in the world and look at, well, what changed between now and then? Like somebody checked in something into this data layer that like messed everything up. So yeah that's how how we narrow those down.
 
@@ -359,7 +354,7 @@ Or we could like switch layers and say, okay, let's look at what's on release ri
 
 You know, now that you've been working in the industry for a while, and you've kind of seen a lot of different types of  development, a lot of different sizes of companies. you know, in the future, what are going to be the most important things you look for in a role, both technical and culture wise?
 
-**Iris** Yeah, that's a great question. I think that at this stage in my career,  I'm more concerned about culture than I am about, tech stack. Although that is also very important to me as somebody who, likes the visual aspect of programming. I think that as long as that's there it comes down to culture. 
+**Iris** Yeah, that's a great question. I think that at this stage in my career,  I'm more concerned about culture than I am about, tech stack. Although that is also very important to me as somebody who, likes the visual aspect of programming. I think that as long as that's there it comes down to culture.
 
 I think about the times where I willingly switched out of a company, like I started actively looking, even though I already had a job, and the only time I did so was mostly because I felt like the culture of the team that I was on was starting to not satisfy me in any way. That's one thing that I do appreciate about Riot is that on both of the teams I was on I was really appreciative of the culture that they have fostered.
 
@@ -374,7 +369,7 @@ oppressive.
 Whereas the opposite, I feel is not true.
 
 **Iris** Yes, definitely. And, I'm very thankful for each manager that I have had at Riot and I mean even at Microsoft, I think I lucked out. I had a really good manager. I think that's also really important is to have a manager that you feel really has your back in everything And is like looking out for your best interest, not their best interests.
- 
+
 **Jeremy** These are the kinds of things that I feel like you find out after you join a team. Do you think there's anything that you would look for or ask during the interviewing process or the recruitment process?
 
 **Iris** I think these are things that will come up during their interview process, hopefully, I would look for cultural interviews. Unfortunately I think a lot of tech companies don't even do cultural interviews or if they do it's like a very quick one at the very end to see if you're a culture fit.
@@ -388,7 +383,7 @@ Cause like how you manage managers is actually very indicative of how like peopl
 
 **Jeremy** Definitely. I think it's a good place to start wrapping up, but are there any other, things you thought we should've talked about or I should have asked?
 
-**Iris**  Nope I think that that's great and I'm happy to wrap it up here 
+**Iris**  Nope I think that that's great and I'm happy to wrap it up here
 
 **Jeremy** Cool. And where can people follow you if they want to see what you're up to?
 
@@ -396,7 +391,7 @@ Cause like how you manage managers is actually very indicative of how like peopl
 
 **Jeremy** Iris, thank you so much for chatting with me today.
 
-**Iris**  Yeah. You too, Jeremy. Thank you for your time. 
+**Iris**  Yeah. You too, Jeremy. Thank you for your time.
 
 **Jeremy** I hope you enjoyed the conversation with Iris. Show notes for this episode are at softwaresessions.com. I'll see you next time.
 
