@@ -4,7 +4,7 @@ title = "Building Indie Hackers with Courtland Allen"
 description = "Courtland Allen talks about the technical details of building Indie Hackers"
 
 [extra]
-episode_url = "https://media.transistor.fm/ab7a382f.mp3"
+episode_url = "https://media.transistor.fm/d8b44e8c.mp3"
 +++
 
 Courtland Allen is the founder of Indie Hackers, a community for people who want to start bootstrapped and profitable businesses. It was acquired by Stripe in 2017. 
