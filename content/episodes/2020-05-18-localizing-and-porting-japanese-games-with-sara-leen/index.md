@@ -37,6 +37,8 @@ Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-a
 
 ### Transcript
 
+You can help edit this transcript on [GitHub](https://github.com/jeremyjung/softwaresessions/tree/master/content/episodes).
+
 <div class="transcript">
 
 **Jeremy:** Hey, this is Jeremy Jung. This episode, I'm talking to Sara Leen, a localization programmer for XSEED Games. Sara has over a decade of experience localizing games from Japanese to English. And we talk about how games are different than other types of software, storing and extracting text, porting games to different platforms, and rewriting a game from scratch. 
