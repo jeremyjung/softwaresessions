@@ -17,11 +17,15 @@
 
 		{% set social_title = config.title %}
 		{% set social_description = config.description %}
+		{% set social_banner = get_url(path='images/top-banner.png') %}
 
 		{% if page %}
 			{% set social_title = page.title %}
 			{% if page.description %}
 				{% set social_description = page.description %}
+			{% endif %}
+			{% if page.extra.social_banner %}
+			  {% set social_banner = get_url(path='images/social_banners/' ~ page.extra.social_banner ) %}
 			{% endif %}
 		{% elif section and section.title %}
 			{% set social_title =  section.title ~ " | " ~ config.title %}
@@ -32,7 +36,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="{{ config.title }}">
 		<meta property="og:description" content="{{ social_description }}">
-		<meta property="og:image" content="{{ get_url(path='images/top-banner.png') | safe }}">
+		<meta property="og:image" content="{{ social_banner | safe }}">
 		<meta property="og:title" content="{{ social_title }}">
 		<!-- /Facebook -->
 
@@ -40,7 +44,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ config.extra.twitter }}">
 		<meta name="twitter:description" content="{{ social_description }}">
-		<meta name="twitter:image" content="{{ get_url(path='images/top-banner.png') | safe }}">
+		<meta name="twitter:image" content="{{ social_banner | safe }}">
 		<meta name="twitter:title" content="{{ social_title }}">
 		<!-- /Twitter -->
 	</head>
