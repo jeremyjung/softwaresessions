@@ -6,6 +6,8 @@ description = "Sara Leen shares what it's like to localize, port, and modernize 
 [extra]
 episode_url = "https://media.transistor.fm/7a2cba26.mp3"
 social_banner = "020-sara-leen.jpg"
+social_title = "Localizing and Porting Japanese Games"
+social_description = "Learn about scripting, reverse engineering, and rewriting games!"
 +++
 
 Sara Leen is a localization programmer for XSEED Games on titles like Ys, Trails in the Sky, and Corpse Party. She got her start reverse engineering and fan translating games. 

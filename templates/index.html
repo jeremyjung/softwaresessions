@@ -27,6 +27,12 @@
 			{% if page.extra.social_banner %}
 			  {% set social_banner = get_url(path='images/social_banners/' ~ page.extra.social_banner ) %}
 			{% endif %}
+			{% if page.extra.social_title %}
+			  {% set social_title = page.extra.social_title %}
+			{% endif %}
+			{% if page.extra.social_description %}
+			  {% set social_description = page.extra.social_description %}
+			{% endif %}
 		{% elif section and section.title %}
 			{% set social_title =  section.title ~ " | " ~ config.title %}
 		{% endif %}
