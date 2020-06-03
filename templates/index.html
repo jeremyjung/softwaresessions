@@ -47,11 +47,26 @@
 		<!-- /Facebook -->
 
 		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="{{ config.extra.twitter }}">
+
 		<meta name="twitter:description" content="{{ social_description }}">
-		<meta name="twitter:image" content="{{ social_banner | safe }}">
 		<meta name="twitter:title" content="{{ social_title }}">
+
+		{% if page.extra.embed_player %}
+			<meta content='player' name='twitter:card'>
+			<meta content='@TransistorFM' name='twitter:site'>
+			<meta content='https://share.transistor.fm/e/9c9fb5a4' name='twitter:player'>
+			<meta content='500' name='twitter:player:width'>
+			<meta content='180' name='twitter:player:height'>
+			<meta content='https://images.transistor.fm/file/transistor/images/show/4222/medium_1568093275-artwork.jpg' name='twitter:image'>
+			<meta name='twitter:image:alt' content="{{ social_title }}">
+			<meta content="{{ page.extra.episode_url | safe }}" name='twitter:player:stream'>
+			<meta content='audio/mpeg' name='twitter:player:stream:content_type'>
+		{% else %}
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:site" content="{{ config.extra.twitter }}">
+			<meta name="twitter:image" content="{{ social_banner | safe }}">
+		{% endif %}
+
 		<!-- /Twitter -->
 	</head>
 	<body>
