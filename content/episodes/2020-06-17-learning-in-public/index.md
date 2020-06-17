@@ -24,7 +24,7 @@ Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-a
 
 - [@swyx](https://twitter.com/swyx)
 - [Personal Site](https://www.swyx.io/)
-- [Cracking the Coding Career](https://crackingthecodingcareer.com/)
+- [The Coding Career Playbook](https://crackingthecodingcareer.com/)
 - [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture))
 - [Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect)
 - [Learn in Public](https://www.swyx.io/writing/learn-in-public/)
@@ -79,9 +79,11 @@ I still personally do wish that I did a CS degree. I'm just saying I definitely 
 I guess I had a relatively fast trajectory. I finished my boot camp at the end of 2017. Started my first dev job in January of 2018 and then just got hired at Amazon at an L6 level in March of 2020. That's a relatively fast trajectory for anyone.
 
 I'm not completely new to programming.  I have done some code before, but then also I do attribute a lot of that to the ability to just learn very quickly in public.
+
 And a lot of people I think it's an alien concept. They vaguely know it's a good idea. I think they don't know how good. Just the relative rarity of people doing it means that  being part of that population makes you stand out. And that's very beneficial for careers even before the current situation we are in, which is now everything's online.
 
 So your professional profile doesn't have a physical presence anymore. You don't have to become a celebrity, a lot of people are like, ah, you have to be an influencer.
+
 No. It's more about just like having a place that you call home online. And you as a developer have an abnormal amount of control over that and you should exploit that as much as possible.
 
 **Jeremy:** [00:06:25] Yeah. When you talk about learning in public you talk about exploiting that, right? It almost makes it sound like the fact that you are learning in public is a big benefit to you. You're getting things from people, whereas,  I think a lot of people when they think about, Oh, I'm going to write a blog post, or I'm going to make this tweet or whatever. It's like I'm going to be helping other people, but maybe a big part of it is the opposite as well.
