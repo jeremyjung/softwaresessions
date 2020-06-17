@@ -9,14 +9,14 @@ social_title = "Learning in Public with Swyx"
 embed_player = "yes"
 +++
 
-Swyx is a senior developer advocate at AWS, an instructor at [Egghead](https://www.egghead.io), and the author of [Cracking the Coding Career](https://crackingthecodingcareer.com/).
+Swyx is a senior developer advocate at AWS, an instructor at [Egghead](https://www.egghead.io), and the author of [The Coding Career Playbook](https://crackingthecodingcareer.com/).
 
 We discuss:
 - Getting help without having a big following
 - Remixing and summarizing what others create
-- Creating "friendcatchers".
+- Creating "friendcatchers"
 - Betting on technologies
-- His new book, cracking the coding career
+- His new book The Coding Career Playbook
 
 Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-am) / [Orion](https://crystalcola.bandcamp.com/track/orion)
 
