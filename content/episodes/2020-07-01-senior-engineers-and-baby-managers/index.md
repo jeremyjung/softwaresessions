@@ -12,14 +12,12 @@ embed_player = "yes"
 Lauren is a Software Engineer on the React Organization's Web Core team at Facebook and was previously an Engineering Manager at Netflix.
 
 We discuss:
-- Getting started in software development
 - Being empowered to say "no" as a senior engineer
-- The vagueness of a technical lead role
-- Why becoming a manager is not a promotion
-- Leaving management to become an engineer again
-- Avoiding clever abstractions in code
+- How tech leads straddle the line between engineer and manager
+- The programmer's midlife crisis
+- Resisting the urge to use clever abstractions
 
-If you enjoy this discussion with Lauren, be sure to check out her [episode on the Changelog](https://changelog.com/podcast/386).
+If you enjoyed this discussion with Lauren, be sure to check out her [episode on the Changelog](https://changelog.com/podcast/386).
 
 Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-am) / [Orion](https://crystalcola.bandcamp.com/track/orion)
 
