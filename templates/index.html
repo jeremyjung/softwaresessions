@@ -54,7 +54,7 @@
 		{% if page.extra.embed_player %}
 			<meta content='player' name='twitter:card'>
 			<meta content='@TransistorFM' name='twitter:site'>
-			<meta content='https://share.transistor.fm/e/9c9fb5a4' name='twitter:player'>
+			<meta content='{{ page.extra.embed_player_url | safe }}' name='twitter:player'>
 			<meta content='500' name='twitter:player:width'>
 			<meta content='180' name='twitter:player:height'>
 			<meta content='https://images.transistor.fm/file/transistor/images/show/4222/medium_1568093275-artwork.jpg' name='twitter:image'>

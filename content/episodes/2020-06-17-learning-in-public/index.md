@@ -7,6 +7,7 @@ description = "Swyx talks about the self centered benefits of learning in public
 episode_url = "https://media.transistor.fm/b2abc441.mp3"
 social_title = "Learning in Public with Swyx"
 embed_player = "yes"
+embed_player_url = "https://share.transistor.fm/s/dff29fde"
 +++
 
 Swyx is a senior developer advocate at AWS, an instructor at [Egghead](https://www.egghead.io), and the author of [The Coding Career Playbook](https://crackingthecodingcareer.com/).
