@@ -6,6 +6,9 @@ description = "Pete explains the ways standards committees, browser vendors, and
 [extra]
 episode_url = "https://media.transistor.fm/b75c6f76.mp3"
 social_title = "The battle for your privacy on the web"
+social_banner = "026-pete-snyder.png"
+social_title = "The battle for your privacy on the web"
+social_description = "How standards committees, browser vendors, and extensions protect us from tracking on the web"
 +++
 
 Pete is the senior security researcher at Brave Software and the co-chair of the [W3C Privacy Interest Group](https://www.w3.org/Privacy/). 
