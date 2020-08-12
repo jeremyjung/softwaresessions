@@ -1,5 +1,5 @@
 +++
-title = "The battle for your privacy on the web"
+title = "The battle for your privacy on the web with Pete Snyder"
 
 description = "Pete explains the ways standards committees, browser vendors, and extensions protect us from tracking on the web"
 
