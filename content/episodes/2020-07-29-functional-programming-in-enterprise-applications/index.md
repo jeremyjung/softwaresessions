@@ -6,7 +6,6 @@ description = "Vlad shares how he applies functional programming concepts in lan
 [extra]
 episode_url = "https://media.transistor.fm/14d8762c.mp3"
 social_title = "Functional Programming in Enterprise Applications with Vladimir Khorikov"
-embed_player = "yes"
 embed_player_url = "https://share.transistor.fm/s/02abed28"
 +++
 

@@ -7,7 +7,6 @@ description = "Pete explains the ways standards committees, browser vendors, and
 episode_url = "https://media.transistor.fm/b75c6f76.mp3"
 social_title = "The battle for your privacy on the web"
 social_banner = "026-pete-snyder.png"
-social_title = "The battle for your privacy on the web"
 social_description = "How standards committees, browser vendors, and extensions protect us from tracking on the web"
 +++
 
