@@ -20,6 +20,17 @@
       <audio data-episode="8" controls="true" src="{{ page.extra.episode_url | safe }}">
         Your browser does not support HTML5 audio.
       </audio>
+      <div class="podcast-app-list">
+        <a href="https://podcasts.apple.com/us/podcast/software-sessions">Apple Podcasts</a> 
+        <span> | </span>
+        <a href="https://overcast.fm/itunes1479514262/software-sessions">Overcast</a>
+        <span> | </span>
+        <a href="https://open.spotify.com/show/7DxBo3WhU7jfFRz0axCmwV">Spotify</a>
+        <span> | </span>
+        <a href="https://pca.st/amb86m1f">Pocket Casts</a>
+        <span> | </span>
+        <a href="https://feeds.transistor.fm/software-sessions">RSS</a>
+      </div>
     {% endif %}
   	  {% if page.content %}
         {{ page.content | safe }}
