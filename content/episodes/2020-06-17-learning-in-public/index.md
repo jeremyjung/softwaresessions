@@ -6,11 +6,9 @@ description = "Swyx talks about the self centered benefits of learning in public
 [extra]
 episode_url = "https://media.transistor.fm/b2abc441.mp3"
 social_title = "Learning in Public with Swyx"
-embed_player = "yes"
-embed_player_url = "https://share.transistor.fm/s/dff29fde"
 +++
 
-Swyx is a senior developer advocate at AWS, an instructor at [Egghead](https://www.egghead.io), and the author of [The Coding Career Playbook](https://crackingthecodingcareer.com/).
+Swyx is a senior developer advocate at AWS, an instructor at [Egghead](https://www.egghead.io), and the author of [The Coding Career Playbook](https://www.learninpublic.org/).
 
 We discuss:
 - Getting help without having a big following
@@ -25,7 +23,7 @@ Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-a
 
 - [@swyx](https://twitter.com/swyx)
 - [Personal Site](https://www.swyx.io/)
-- [The Coding Career Playbook](https://crackingthecodingcareer.com/)
+- [The Coding Career Playbook](https://www.learninpublic.org/)
 - [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture))
 - [Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect)
 - [Learn in Public](https://www.swyx.io/writing/learn-in-public/)
