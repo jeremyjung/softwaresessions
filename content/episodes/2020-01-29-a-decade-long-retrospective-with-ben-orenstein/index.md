@@ -4,7 +4,7 @@ title = "A decade long retrospective with Ben Orenstein"
 description = "Ben Orenstein reflects on a decade of programming, teaching, conference speaking, and his latest role as the CEO of Tuple."
 
 [extra]
-episode_url = "https://media.transistor.fm/d13ee068.mp3"
+episode_url = "https://media.transistor.fm/4a80a981.mp3"
 +++
 
 Ben is the CEO of [Tuple](https://www.tuple.app), a pair programming application for remote developers.
