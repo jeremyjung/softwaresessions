@@ -43,6 +43,8 @@ social_description = "Running WebAssembly inside Kubernetes"
 
 This episode is also posted on [Rustacean Station](https://rustacean-station.org/).
 
+Music by Crystal Cola: [12:30 AM](https://crystalcola.bandcamp.com/track/12-30-am) / [Orion](https://crystalcola.bandcamp.com/track/orion)
+
 ---
 
 ### Transcript
