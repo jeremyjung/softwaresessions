@@ -6,6 +6,7 @@ description = "Ryan discusses the tradeoffs of sessions vs JSON web tokens, comm
 [extra]
 episode_url = "https://media.transistor.fm/a87501af/e45d05a2.mp3"
 social_title = "React Authentication"
+social_banner = "034-ryan-chenkie.png"
 social_description = "Ryan discusses the tradeoffs of sessions vs JSON web tokens, common mistakes to avoid, and his experience creating video courses."
 +++
 
