@@ -7,7 +7,7 @@ description = "Ryan discusses the tradeoffs of sessions vs JSON web tokens, comm
 episode_url = "https://media.transistor.fm/a87501af/e45d05a2.mp3"
 social_title = "React Authentication"
 social_banner = "034-ryan-chenkie.png"
-social_description = "Ryan discusses the tradeoffs of sessions vs JSON web tokens, common mistakes to avoid, and his experience creating video courses."
+social_description = "Sessions vs JSON web tokens, mistakes to avoid, and creating video courses"
 +++
 
 [Ryan](https://twitter.com/ryanchenkie) is the author of [Advanced React Security Patterns](https://reactsecurity.io/) and [Securing Angular Applications](https://ryanchenkie.com/securing-angular-applications/). He picked up his authentication expertise working at [Auth0](https://auth0.com/). Currently, he's a GraphQL developer advocate at [Prisma](https://www.prisma.io/).
