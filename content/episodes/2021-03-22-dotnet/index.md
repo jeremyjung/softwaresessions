@@ -12,6 +12,8 @@ social_description = "What .NET is and the many places it's used"
 
 Scott is the Community Program Manager for the .NET team at Microsoft and the host of the Hanselminutes podcast.
 
+This episode originally aired on Software Engineering Radio.
+
 Personal Links and Projects:
 - [@shanselman](https://twitter.com/shanselman)
 - [Hanselminutes](https://www.hanselminutes.com/)
