@@ -4,7 +4,7 @@ title = "Quality Assurance Testing"
 description = "Michael and Maxwell of Aspiritech discuss exploratory testing, dropping old tests, accessibility, and how QA can influence product usability and documentation"
 
 [extra]
-episode_url = "https://media.transistor.fm/3c2740d6/c8aeac62.mp3"
+episode_url = "https://media.transistor.fm/3c2740d6/d8fd632f.mp3"
 +++
 
 Michael Ashburne and Maxwell Huffman are QA Managers at Aspiritech.
