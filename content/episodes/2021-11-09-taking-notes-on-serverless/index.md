@@ -5,6 +5,9 @@ description = "Swizec Teller shares his experience with serverless technology, t
 
 [extra]
 episode_url = "https://media.transistor.fm/49cc2fd4/bc911df4.mp3"
+social_title = "Taking notes on serverless"
+social_banner = "040-swizec-teller.png"
+social_description = "Taking notes, sharing knowledge in teams, and serverless"
 +++
 
 Swizec is the author of the Serverless Handbook and a software engineer at Tia.
