@@ -15,7 +15,6 @@ Swizec is the author of the Serverless Handbook and a software engineer at Tia.
 ### Swizec
 - [Swizec's personal site](https://swizec.com/)
 - [Serverless Handbook](https://serverlesshandbook.dev/)
-- [Serverless Framework](https://github.com/serverless/serverless)
 
 ### AWS
 - [Lambda](https://aws.amazon.com/lambda/)
@@ -36,6 +35,7 @@ Swizec is the author of the Serverless Handbook and a software engineer at Tia.
 - [Cloud Functions for Firebase](https://firebase.google.com/docs/functions)
 
 ### Related topics
+- [Serverless Framework](https://github.com/serverless/serverless)
 - [Jamstack](https://jamstack.org/)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - [What is a Static Site Generator?](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/)
