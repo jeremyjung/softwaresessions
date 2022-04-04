@@ -17,7 +17,7 @@ Our conversation applies to just about any language or framework so don't worry 
 - If you don't involve things like the database in any of your tests your application may not work at all despite your tests passing
 - You may not need to worry about scaling at the start for smaller or internal applications
 - Try to break features into the smallest pieces possible so they can be checked in and reviewed quickly
-- Jason doesn't remember the difference between a stub and a mock and doesn't think it's that important
+- Jason doesn't remember the difference between a stub and a mock because he rarely uses them
 
 
 ### Related Links:
