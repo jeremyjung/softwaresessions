@@ -4,7 +4,7 @@ title = "React Authentication with Ryan Chenkie"
 description = "Ryan discusses the tradeoffs of sessions vs JSON web tokens, common mistakes to avoid, and his experience creating video courses."
 
 [extra]
-episode_url = "https://media.transistor.fm/a87501af/e45d05a2.mp3"
+episode_url = "https://pinecast.com/listen/b025511f-6599-40ae-9a7a-51ab1fcc5a92.mp3"
 social_title = "React Authentication"
 social_banner = "034-ryan-chenkie.png"
 social_description = "Sessions vs JSON web tokens, mistakes to avoid, and creating video courses"

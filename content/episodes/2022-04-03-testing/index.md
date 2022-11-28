@@ -4,7 +4,7 @@ title = "Testing"
 description = "Jason Swett discusses when and how to write tests within the context of smaller applications"
 
 [extra]
-episode_url = "https://media.transistor.fm/2c5eadba/6efa9b85.mp3"
+episode_url = "https://pinecast.com/listen/0fc0a965-48ef-4ca4-9af0-175565af7c0f.mp3"
 +++
 
 Jason Swett is the author of the Complete Guide to Rails Testing. We covered Jason's experience with testing while building relatively small Ruby on Rails applications. 

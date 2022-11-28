@@ -4,9 +4,8 @@ title = "Functional Programming in Enterprise Applications with Vladimir Khoriko
 description = "Vlad shares how he applies functional programming concepts in languages like C#"
 
 [extra]
-episode_url = "https://media.transistor.fm/14d8762c.mp3"
+episode_url = "https://pinecast.com/listen/f377fa67-6298-4461-ad5b-48149c544db7.mp3"
 social_title = "Functional Programming in Enterprise Applications with Vladimir Khorikov"
-embed_player_url = "https://share.transistor.fm/s/02abed28"
 +++
 
 Vlad is a Pluralsight course creator and the author of Unit Testing: Principles, Practices, and Patterns.

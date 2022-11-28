@@ -4,7 +4,7 @@ title = "Distributed Systems and Careers with Shubheksha Jalan"
 description = "Shubheksha talks about service observability, the importance of job titles, and the difference between sponsors and mentors."
 
 [extra]
-episode_url = "https://media.transistor.fm/c5451744/86fd6e78.mp3"
+episode_url = "https://pinecast.com/listen/9daafe46-b631-4c0e-adbf-aa515aa961a5.mp3"
 social_title = "Distributed Systems and Careers"
 social_banner = "035-shubheksha-jalan.png"
 social_description = "Observability, job titles, and sponsors vs mentors"

@@ -4,7 +4,7 @@ title = "How I write backends with Federico Pereiro"
 description = "Federico describes how he creates understandable and stable backends for web applications."
 
 [extra]
-episode_url = "https://media.transistor.fm/e029d93d.mp3"
+episode_url = "https://pinecast.com/listen/b74cd879-7f89-42d8-b3b0-24e51a14ad36.mp3"
 +++
 
 Federico has been writing backends for web applications since 2012 and is the co-founder and chef of alto;code.  He wrote a post on GitHub named "How I write backends" that summarizes his process.

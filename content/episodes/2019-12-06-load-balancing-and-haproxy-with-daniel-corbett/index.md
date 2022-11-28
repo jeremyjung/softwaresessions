@@ -6,7 +6,7 @@ description = "Daniel Corbett discusses how load balancers such as HAProxy are u
 aliases = ["/episodes/load-balancing-and-haproxy-with-daneil-corbett/index.html"]
 
 [extra]
-episode_url = "https://media.transistor.fm/7a5f62e2.mp3"
+episode_url = "https://pinecast.com/listen/346fb3ea-e487-4ba9-96c7-c0ff56e29d9e.mp3"
 +++
 
 Daniel is the Director of Product at HAProxy Technologies.

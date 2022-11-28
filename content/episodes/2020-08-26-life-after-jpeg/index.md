@@ -4,7 +4,7 @@ title = "Life after JPEG with Henri Helvetica"
 description = "Henri talks web performance and how WebP could become the main image format of the web."
 
 [extra]
-episode_url = "https://media.transistor.fm/70e57a5b.mp3"
+episode_url = "https://pinecast.com/listen/8587e324-111b-4512-a61e-b4bf45a1b0ac.mp3"
 social_title = "Life after JPEG"
 social_banner = "027-henri-helvetica.png"
 social_description = "How WebP could become the main image format of the web"

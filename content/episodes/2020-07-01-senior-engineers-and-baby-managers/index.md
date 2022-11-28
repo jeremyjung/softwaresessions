@@ -4,10 +4,8 @@ title = "Senior engineers and baby managers with Lauren Tan"
 description = "Lauren shares her thoughts on the roles of senior engineers, technical leads, and managers."
 
 [extra]
-episode_url = "https://media.transistor.fm/b303bd57.mp3"
+episode_url = "https://pinecast.com/listen/6c0180f9-f56f-4e30-8137-0a2a4ed4ed69.mp3"
 social_title = "Senior engineers and baby managers with Lauren Tan"
-embed_player = "yes"
-embed_player_url = "https://share.transistor.fm/s/38f0a919"
 +++
 
 Lauren is a Software Engineer on the React Organization's Web Core team at Facebook and was previously an Engineering Manager at Netflix.

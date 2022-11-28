@@ -13,9 +13,6 @@
       {% endif %}
     </header>
   	<p>{{ page.description }}</p>
-    {% if page.extra.transistor_url %}
-      <iframe src='{{ page.extra.transistor_url | safe }}' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
-    {% endif %}
     {% if page.extra.episode_url %}
       <audio data-episode="8" controls="true" src="{{ page.extra.episode_url | safe }}">
         Your browser does not support HTML5 audio.
@@ -29,7 +26,7 @@
         <span> | </span>
         <a href="https://pca.st/amb86m1f">Pocket Casts</a>
         <span> | </span>
-        <a href="https://feeds.transistor.fm/software-sessions">RSS</a>
+        <a href="https://pinecast.com/feed/software-sessions">RSS</a>
       </div>
     {% endif %}
   	  {% if page.content %}

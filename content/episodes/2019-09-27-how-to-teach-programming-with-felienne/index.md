@@ -4,7 +4,7 @@ title = "How to Teach Programming with Felienne"
 description = "Felienne discusses teaching programming to kids by saying code out loud, the user experience of spreadsheets, the role of a computer science education, and her experience as a professor, conference speaker, and podcaster."
 
 [extra]
-episode_url = "https://media.transistor.fm/515168b3.mp3"
+episode_url = "https://pinecast.com/listen/be40becb-96bc-4ed0-8bf9-fa00dbc73b17.mp3"
 +++
 
 Felienne is an associate professor at Leiden University who brings a unique perspective on programming education backed by scientific research.  She also runs the [Programming Education Research Lab (PERL)](https://perl.liacs.nl/) in order to study the best ways to teach programming.

@@ -4,10 +4,8 @@ title = "Open Source Onboarding with Brian Douglas"
 description = "Brian talks about unintentional gatekeeping in open source, making projects more approachable, and how new contributors should get started"
 
 [extra]
-episode_url = "https://media.transistor.fm/13cd9ac3.mp3"
+episode_url = "https://pinecast.com/listen/d12bc9a1-2f1e-409c-a99e-c5ee0e3a74bf.mp3"
 social_title = "Open Source Onboarding with Brian Douglas"
-embed_player = "yes"
-embed_player_url = "https://share.transistor.fm/s/2f73a2fc"
 +++
 
 Brian is a Senior Developer Advocate at GitHub and was previously a Developer Advocate at Netlify.

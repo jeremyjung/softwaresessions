@@ -4,7 +4,7 @@ title = "Robotic Process Automation"
 description = "Alexander Pugh discusses why and when to use Robotic Process Automation (RPA)"
 
 [extra]
-episode_url = "https://media.transistor.fm/a354eda4/1b081525.mp3"
+episode_url = "https://pinecast.com/listen/a4f0ba14-b507-4937-95af-4705477e1533.mp3"
 +++
 
 Alexander Pugh is a software engineer at Albertsons. He has worked in Robotic Process Automation and the cognitive services industry for over five years.

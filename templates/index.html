@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x64-favicon.png') | safe }}" sizes="64x64" />
 		<link rel="shortcut icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') | safe }}" sizes="256x256" />
 		<link rel="apple-touch-icon" type="image/png" href="{{ get_url(path='favicons/x256-favicon.png') | safe }}" />
-		<link rel="alternate" type="application/rss+xml" title="Software Sessions" href="https://feeds.transistor.fm/software-sessions" />
+		<link rel="alternate" type="application/rss+xml" title="Software Sessions" href="https://pinecast.com/feed/software-sessions" />
 		<link rel="stylesheet" href="{{ get_url(path='style.css') | safe }}">
 
 		{% set social_title = config.title %}
@@ -51,21 +51,9 @@
 		<meta name="twitter:description" content="{{ social_description }}">
 		<meta name="twitter:title" content="{{ social_title }}">
 
-		{% if page.extra.embed_player %}
-			<meta content='player' name='twitter:card'>
-			<meta content='@TransistorFM' name='twitter:site'>
-			<meta content='{{ page.extra.embed_player_url | safe }}' name='twitter:player'>
-			<meta content='500' name='twitter:player:width'>
-			<meta content='180' name='twitter:player:height'>
-			<meta content='https://images.transistor.fm/file/transistor/images/show/4222/medium_1568093275-artwork.jpg' name='twitter:image'>
-			<meta name='twitter:image:alt' content="{{ social_title }}">
-			<meta content="{{ page.extra.episode_url | safe }}" name='twitter:player:stream'>
-			<meta content='audio/mpeg' name='twitter:player:stream:content_type'>
-		{% else %}
-			<meta name="twitter:card" content="summary_large_image">
-			<meta name="twitter:site" content="{{ config.extra.twitter }}">
-			<meta name="twitter:image" content="{{ social_banner | safe }}">
-		{% endif %}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="{{ config.extra.twitter }}">
+		<meta name="twitter:image" content="{{ social_banner | safe }}">
 
 		<!-- /Twitter -->
 	</head>
@@ -96,7 +84,7 @@
 				{% endif %}
 				<p>Say 👋 via <a href="mailto:contact@softwaresessions.com">e-mail</a> or <a href="https://www.twitter.com/jertype">twitter</a>.</p>
 
-				<iframe src='https://share.transistor.fm/e/software-sessions/playlist/dark' width='100%' height='390' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:390px;'></iframe>
+				<iframe src="https://pinecast.com/embed/player_playlist/software-sessions?color.primary=%2330343c&amp;color.secondary=%2330343c&amp;color.accent=%230066ff" border="0" style="width:100%;border:0" height="400"></iframe>
 				Show notes and transcripts are available on the <a href="{{ get_url(path="@/episodes/_index.md") }}">episode pages</a>.
 			</article>
 			{% endblock body %}

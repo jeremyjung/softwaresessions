@@ -4,7 +4,7 @@ title = "Bringing GeoCities Back with Kyle Drake"
 description = "Kyle Drake discusses what GeoCities was, why it failed, the technical and legal challenges of creating its spiritual successor Neocities, and how he's working to preserve and curate sites from the old web."
 
 [extra]
-episode_url = "https://media.transistor.fm/447cc100.mp3"
+episode_url = "https://pinecast.com/listen/8f476112-1203-43cd-866d-d625e078eb11.mp3"
 +++
 
 Kyle is the creator of [Neocities](https://neocities.org/) a free web hosting site that encourages people to build creative personal websites in the spirit of GeoCities.  He's currently working on [restorativland](https://restorativland.org/) where people interested in the history of the web can discover websites originally hosted at places like GeoCities and Myspace Music.

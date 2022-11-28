@@ -4,7 +4,7 @@ title = "Creating Tuple using WebRTC with Spencer Dixon"
 description = "Spencer Dixon shares how he built Tuple using WebRTC and the many challenges of native app development"
 
 [extra]
-episode_url = "https://media.transistor.fm/0104dbf0.mp3"
+episode_url = "https://pinecast.com/listen/7d76a46e-b09d-474c-9eeb-bd08f7b7c494.mp3"
 +++
 
 Spencer Dixon is the CTO and cofounder of Tuple, a pair programming application for remote developers.

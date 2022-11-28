@@ -4,7 +4,7 @@ title = "Building Scalable Systems Safely in Ruby with Samuel Williams"
 description = "Samuel explains the difference between concurrency and parallelism, the dangers of writing multithreaded code, how languages like Node, Go, and Erlang safely handle parallelism, and his efforts to improve the Ruby concurrency ecosystem."
 
 [extra]
-episode_url = "https://media.transistor.fm/710f68e5.mp3"
+episode_url = "https://pinecast.com/listen/a3ab4f40-20b3-4e74-a9dd-0ba3797cc9d1.mp3"
 +++
 
 Samuel is a member of the Ruby core team.  He's working on making it safer and easier to write concurrent applications in Ruby.

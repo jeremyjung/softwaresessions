@@ -4,10 +4,8 @@ title = "Writing for Software Developers with Philip Kiely"
 description = "Philip talks about writing effective emails, competing with stack overflow, launching his book, and how developers skim tutorials"
 
 [extra]
-episode_url = "https://media.transistor.fm/fd41de69.mp3"
+episode_url = "https://pinecast.com/listen/482f1812-7d7b-4188-9b9c-8218ce8084a7.mp3"
 social_title = "Writing for Software Developers"
-embed_player = "yes"
-embed_player_url = "https://share.transistor.fm/s/9c9fb5a4"
 +++
 
 Philip Kiely is the author of [Writing for Software Developers](https://philipkiely.com/wfsd/) and has written for companies like Smashing Magazine, CSS-Tricks, and Twilio.

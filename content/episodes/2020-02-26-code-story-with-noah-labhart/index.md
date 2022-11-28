@@ -4,7 +4,7 @@ title = "From agency to startup with Noah Labhart"
 description = "Noah discusses leaving the corporate world, starting a mobile app agency, and building a startup centered around on-demand labor"
 
 [extra]
-episode_url = "https://media.transistor.fm/39a016f2.mp3"
+episode_url = "https://pinecast.com/listen/713d8178-3a26-4900-9989-e284467af868.mp3"
 +++
 
 Noah is the CTO and cofounder of Veryable, an on-demand marketplace for manufacturing, logistics, and warehousing labor.  

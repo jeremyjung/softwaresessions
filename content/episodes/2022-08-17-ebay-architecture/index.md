@@ -4,7 +4,7 @@ title = "eBay Architecture"
 description = "Randy Shoup describes how eBay's architecture evolved over the last few decades"
 
 [extra]
-episode_url = "https://media.transistor.fm/c2f9a0ac/e9741336.mp3"
+episode_url = "https://pinecast.com/listen/3c6d6f97-c449-40fc-b60b-bec89568be38.mp3"
 +++
 
 Randy Shoup is the VP of Engineering and Chief Architect at eBay. He was previously the VP of Engineering at WeWork and Stitch Fix, a Director of Engineering at Google Cloud where he worked on App Engine, and a Chief Engineer and Distinguished Architect at eBay in 2004.

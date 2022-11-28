@@ -4,7 +4,7 @@ title = "Learning in Public with Swyx"
 description = "Swyx talks about the self centered benefits of learning in public and navigating a software development career."
 
 [extra]
-episode_url = "https://media.transistor.fm/b2abc441.mp3"
+episode_url = "https://pinecast.com/listen/c37ccc2f-640c-4980-b4dc-d59ca36c3dbc.mp3"
 social_title = "Learning in Public with Swyx"
 +++
 

@@ -6,7 +6,7 @@ description = "Julia Evans explains all things HTTP, the need for intermediate l
 aliases = ["/episodes/http-and-intermediate-education-with-julia-evans"]
 
 [extra]
-episode_url = "https://media.transistor.fm/c5d70ee3.mp3"
+episode_url = "https://pinecast.com/listen/aac33d94-e24e-4b40-aa37-5d292b5ac036.mp3"
 +++
 
 Julia Evans is best known for her zines and blog posts that break down technical topics in a friendly way.  She has written educational material on everything from Linux system calls to working with managers.

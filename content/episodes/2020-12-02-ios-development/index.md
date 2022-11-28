@@ -4,7 +4,7 @@ title = "iOS Development with Timirah James"
 description = "Timirah shares how she got into iOS development without a CS degree and her love for the Swift programming language."
 
 [extra]
-episode_url = "https://media.transistor.fm/68549081/19a55f39.mp3"
+episode_url = "https://pinecast.com/listen/421bb13f-f728-44c4-a037-8eb4bd19ecb2.mp3"
 social_title = "iOS Development"
 social_banner = "033-timirah-james.png"
 social_description = "Timirah shares how she got into iOS development without a CS degree and her love for the Swift programming language"

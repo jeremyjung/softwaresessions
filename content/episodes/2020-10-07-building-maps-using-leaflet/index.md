@@ -4,7 +4,7 @@ title = "Building Maps using Leaflet with Sumit Kumar"
 description = "Sumit Kumar shares his experience working with GeoJSON, visualizing live data sources, and creating the Leaflet-Geoman plugin"
 
 [extra]
-episode_url = "https://media.transistor.fm/90c3816b.mp3"
+episode_url = "https://pinecast.com/listen/19173097-33e3-4da1-baf9-9b6e54972394.mp3"
 social_title = "Building Maps using Leaflet"
 social_description = "Sumit shares his experience creating applications and plugins for leaflet"
 +++

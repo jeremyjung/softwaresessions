@@ -4,7 +4,7 @@ title = "Building the Lucky Web Framework in Crystal with Paul Smith"
 description = "Paul discusses how strict compile time guarantees inspired him to create Lucky using the Crystal programming language"
 
 [extra]
-episode_url = "https://media.transistor.fm/3338b381.mp3"
+episode_url = "https://pinecast.com/listen/d30916bb-cc00-4a10-9241-5455564adcd0.mp3"
 social_title = "Building the Lucky Web Framework in Crystal"
 social_description = "The benefits of compile time guarantees and conversational error messages"
 +++

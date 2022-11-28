@@ -4,7 +4,7 @@ title = "Choosing the Right Job with Cassidy Williams"
 description = "Cassidy walks us through her career and gives us insight on choosing jobs, quitting them, and focusing on what's important to you.  We also discuss keeping track of her many ideas, teaching workshops at React Training, and why Amazon was a poor fit."
 
 [extra]
-episode_url = "https://media.transistor.fm/da6cdbb9.mp3"
+episode_url = "https://pinecast.com/listen/9b1ad942-5f5c-400b-9bfd-d5a113d15ad8.mp3"
 +++
 
 Cassidy is a developer and instructor at React Training and the Director of Outreach at cKeys, a Seattle based organization that promotes learning electronics through mechanical keyboards.  She previously worked at Amazon, CodePen, L4 Digital, Clarifai, and Venmo.  However, she's probably best known for promoting diversity in tech, creating cool mechanical keyboards, and making memes come true.

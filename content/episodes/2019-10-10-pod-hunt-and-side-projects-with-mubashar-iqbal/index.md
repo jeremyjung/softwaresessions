@@ -4,7 +4,7 @@ title = "Pod Hunt and Side Projects with Mubashar Iqbal"
 description = "Mubs shares strategies for building successful side projects, how they differ from professional projects, and explains how he built Pod Hunt, an app for discovering podcasts."
 
 [extra]
-episode_url = "https://media.transistor.fm/b7aa45ba.mp3"
+episode_url = "https://pinecast.com/listen/77ee3936-9f04-4b1f-b23a-c54d3dc9818c.mp3"
 +++
 
 Mubs is an amazingly prolific creator.  He's built 85 side projects which are all listed on his website and was Product Hunt's Maker of the Year in 2016.  His output is inspiring and he offers great advice on how to approach building side projects of your own.

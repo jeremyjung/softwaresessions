@@ -4,7 +4,7 @@ title = "Supabase"
 description = "Ant Wilson shares what it's like to build Supabase"
 
 [extra]
-episode_url = "https://media.transistor.fm/033bcc78/587f963a.mp3"
+episode_url = "https://pinecast.com/listen/31464e36-9ecd-496b-9e05-16b21c7d0912.mp3"
 +++
 
 Ant Wilson is the co-founder and CTO of supabase.

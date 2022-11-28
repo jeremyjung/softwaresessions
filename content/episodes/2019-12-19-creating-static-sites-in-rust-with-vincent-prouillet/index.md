@@ -4,7 +4,7 @@ title = "Creating Static Sites in Rust with Vincent Prouillet"
 description = "Vincent Prouillet talks about his experience building the Zola static site generator and reflects back on five years of work with Rust."
 
 [extra]
-episode_url = "https://media.transistor.fm/86856629.mp3"
+episode_url = "https://pinecast.com/listen/ab5a137d-8870-42cb-bf52-f52bf4d0253b.mp3"
 +++
 
 Vincent is the creator of [Zola](https://www.getzola.org) (Formerly Gutenburg), a Static Site Generator built with [Rust](https://www.rust-lang.org/) and [Tera](https://github.com/Keats/tera), a Jinja2-like template engine.

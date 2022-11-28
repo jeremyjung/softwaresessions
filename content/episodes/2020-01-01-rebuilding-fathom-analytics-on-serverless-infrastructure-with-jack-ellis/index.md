@@ -4,7 +4,7 @@ title = "Rebuilding Fathom Analytics on Serverless Infrastructure with Jack Elli
 description = "Jack Ellis shares his experience rewriting Fathom Analytics and migrating to AWS serverless infrastructure using Laravel Vapor."
 
 [extra]
-episode_url = "https://media.transistor.fm/7d0831ba.mp3"
+episode_url = "https://pinecast.com/listen/180c1a62-178f-4159-a609-f81b4ef3d1ef.mp3"
 +++
 
 Jack is a software consultant with over 12 years of PHP experience.  He's currently working on [Fathom Analytics](https://usefathom.com/ref/SVQ3BG) and a [course on Serverless Laravel](https://serverlesslaravelcourse.com/).

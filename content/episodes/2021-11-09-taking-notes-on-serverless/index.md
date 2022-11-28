@@ -4,7 +4,7 @@ title = "Taking Notes on Serverless"
 description = "Swizec Teller shares his experience with serverless technology, taking notes, and sharing information with his team"
 
 [extra]
-episode_url = "https://media.transistor.fm/49cc2fd4/bc911df4.mp3"
+episode_url = "https://pinecast.com/listen/f5056014-1895-4b6c-ad62-80c96857c72d.mp3"
 social_title = "Taking notes on serverless"
 social_banner = "040-swizec-teller.png"
 social_description = "Taking notes, sharing knowledge in teams, and serverless"

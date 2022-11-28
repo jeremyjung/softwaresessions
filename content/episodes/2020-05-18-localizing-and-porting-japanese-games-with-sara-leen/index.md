@@ -4,7 +4,7 @@ title = "Localizing and Porting Japanese Games with Sara Leen"
 description = "Sara Leen shares what it's like to localize, port, and modernize games"
 
 [extra]
-episode_url = "https://media.transistor.fm/7a2cba26.mp3"
+episode_url = "https://pinecast.com/listen/7e5f82a7-d5f1-43ab-85d5-5e98ea7694c5.mp3"
 social_banner = "020-sara-leen.jpg"
 social_title = "Localizing and Porting Japanese Games"
 social_description = "Learn about scripting, reverse engineering, and rewriting games!"

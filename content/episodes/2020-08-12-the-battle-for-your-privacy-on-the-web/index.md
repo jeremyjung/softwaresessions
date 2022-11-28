@@ -4,7 +4,7 @@ title = "The battle for your privacy on the web with Pete Snyder"
 description = "Pete explains the ways standards committees, browser vendors, and extensions protect us from tracking on the web"
 
 [extra]
-episode_url = "https://media.transistor.fm/b75c6f76.mp3"
+episode_url = "https://pinecast.com/listen/be69cdd5-ccfa-43df-b9b3-2c45e9806ad3.mp3"
 social_title = "The battle for your privacy on the web"
 social_banner = "026-pete-snyder.png"
 social_description = "How standards committees, browser vendors, and extensions protect us from tracking on the web"

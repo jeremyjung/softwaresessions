@@ -4,7 +4,7 @@ title = "Fixing a Broken Development Process with John Doran"
 description = "John Doran shares how his team focused on monitoring, continuous integration, and changed their culture to save a SaaS business that was struggling to support its customer base."
 
 [extra]
-episode_url = "https://media.transistor.fm/953f856d/dd8a3a53.mp3"
+episode_url = "https://pinecast.com/listen/5cab95d4-45d0-47bf-b595-cc4309ae83a8.mp3"
 social_title = "Fixing a Broken Development Process"
 social_description = "John Doran shares how his team changed their culture to save a SaaS business struggling with technical problems."
 +++

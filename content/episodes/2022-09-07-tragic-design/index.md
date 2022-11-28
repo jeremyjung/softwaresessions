@@ -4,7 +4,7 @@ title = "Jonathan Shariat on Tragic Design"
 description = "Jonathan Shariat discusses how to avoid building harmful software"
 
 [extra]
-episode_url = "https://media.transistor.fm/f3ba2b18/fa9b6cdd.mp3"
+episode_url = "https://pinecast.com/listen/8b2cc5d8-3d06-4408-8415-8b856ca53b16.mp3"
 +++
 
 Jonathan Shariat is the coauthor of the book Tragic Design and cohost of the Design Review Podcast. He's currently a Sr. Interaction Designer & Accessibility Program Lead at Google.

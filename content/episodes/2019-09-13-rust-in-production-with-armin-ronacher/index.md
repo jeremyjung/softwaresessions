@@ -4,7 +4,7 @@ title = "Rust in Production with Armin Ronacher"
 description = "Armin Ronacher talks about getting into Rust, when to use it, writing Rust extensions for Python, building web applications with actix, creating debugging libraries, and the Rust ecosystem."
 
 [extra]
-episode_url = "https://media.transistor.fm/d60c954f.mp3"
+episode_url = "https://pinecast.com/listen/3f91aade-29e1-4a94-9c92-c2bfc6d57879.mp3"
 +++
 
 Armin is the creator of the Flask web framework, the Jinja2 template engine, and many other open source projects. He's currently the Director of Engineering at Sentry.

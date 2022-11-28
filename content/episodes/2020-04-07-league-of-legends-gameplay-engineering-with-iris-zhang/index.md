@@ -6,7 +6,7 @@ description = "Iris shares her experience working on backend services and gamepl
 aliases = ["/episodes/gameplay-programming-at-Riot-games-with-iris-zhang"]
 
 [extra]
-episode_url = "https://media.transistor.fm/ab7a382f.mp3"
+episode_url = "https://pinecast.com/listen/63ed56b5-a91e-4990-9a3f-1b628692805c.mp3"
 +++
 
 Iris Zhang is a gameplay engineer at Riot Games on the League of Legends Champions Engineering team. She previously worked on backend services at Microsoft.

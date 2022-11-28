@@ -4,7 +4,7 @@ title = "Object Relational Mappers with Julie Lerman"
 description = "Julie discusses the role of object relational mappers and their trade-offs, micro-ORMs, the rise of specialized databases, and Entity Framework"
 
 [extra]
-episode_url = "https://media.transistor.fm/ba9b8c59/b847427d.mp3"
+episode_url = "https://pinecast.com/listen/cff05b0f-3352-4976-bc8a-164e1f99f496.mp3"
 social_title = "Object Relational Mappers"
 social_description = "Julie discusses the role of object relational mappers and their trade-offs, micro-ORMs, the rise of specialized databases, and Entity Framework"
 +++

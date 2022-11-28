@@ -4,7 +4,7 @@ title = "Xe Iaso on Tailscale"
 description = "Xe Iaso explains why Tailscale isn't a Virtual Pain Network"
 
 [extra]
-episode_url = "https://media.transistor.fm/0a2a6e6d/7740aae4.mp3"
+episode_url = "https://pinecast.com/listen/e1df0216-7c72-427e-9d24-806d0892f10a.mp3"
 +++
 
 Xe Iaso is the Archmage of Infrastructure at Tailscale and previously worked at Heroku.

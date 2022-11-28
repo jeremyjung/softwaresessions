@@ -4,7 +4,7 @@ title = "How the Ruby Runtime Works with Aaron Patterson"
 description = "Aaron Patterson introduces Ruby runtime internals including details on its virtual machine, global interpreter lock, JIT compiler, and the complexities of building a compacting garbage collector."
 
 [extra]
-episode_url = "https://media.transistor.fm/75a2a696.mp3"
+episode_url = "https://pinecast.com/listen/9ace563a-7a79-4376-b666-4fa92c724b2f.mp3"
 +++
 
 Aaron is on both the Ruby and Rails core teams.   He's best known for making puns, teaching others, and his contributions to Ruby internals.  Lately he's been focusing on a compacting garbage collector for Ruby.

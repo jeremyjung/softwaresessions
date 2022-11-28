@@ -4,7 +4,7 @@ title = "Deployment from Scratch"
 description = "Josef Strzibny the author of Deployment from Scratch discusses how to self host applications"
 
 [extra]
-episode_url = "https://media.transistor.fm/3c6b2a74/f5bd3dd2.mp3"
+episode_url = "https://pinecast.com/listen/725d02a6-7bce-4d38-8796-73e2ae3c702a.mp3"
 +++
 
 Josef Strzibny is the author of Deployment from Scratch and a current Fedora contributor. He previously worked on the Developer Experience team at Red Hat.

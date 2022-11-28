@@ -4,7 +4,7 @@ title = "Scott Hanselman on .NET"
 description = "Scott Hanselman explains what .NET is, where it's used, why it has multiple runtimes, its intermediary language, and the many domains that use it"
 
 [extra]
-episode_url = "https://media.transistor.fm/7aa6a6d7/867f544f.mp3"
+episode_url = "https://pinecast.com/listen/dc85e47d-037a-42c6-9f64-63bd8e83c0be.mp3"
 social_title = "What's .NET?"
 social_banner = "036-scott-hanselman.png"
 social_description = "What .NET is and the many places it's used"

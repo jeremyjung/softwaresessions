@@ -4,7 +4,7 @@ title = "Async Programming and TCP Sockets in C# with Stephen Cleary"
 description = "Stephen explains asynchronous programming with async/await and TCP sockets in C#"
 
 [extra]
-episode_url = "https://media.transistor.fm/b5857173.mp3"
+episode_url = "https://pinecast.com/listen/87ab74be-519e-4f01-ae42-61e0842ca3f0.mp3"
 +++
 
 Stephen Cleary is the author of the Concurrency in C# Cookbook and a Microsoft MVP. He has also written many blog posts on asynchronous programming.

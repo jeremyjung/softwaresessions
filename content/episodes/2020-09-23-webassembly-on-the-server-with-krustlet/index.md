@@ -4,7 +4,7 @@ title = "WebAssembly on the Server with Krustlet"
 description = "Taylor Thomas explains how Krustlet runs WebAssembly modules in Kubernetes and why it's a promising option for the future of server side applications."
 
 [extra]
-episode_url = "https://media.transistor.fm/70e98856.mp3"
+episode_url = "https://pinecast.com/listen/d20fe073-c099-46a4-99b2-5c19c9a7cc47.mp3"
 social_title = "WebAssembly on the Server with Krustlet"
 social_description = "Running WebAssembly inside Kubernetes"
 +++

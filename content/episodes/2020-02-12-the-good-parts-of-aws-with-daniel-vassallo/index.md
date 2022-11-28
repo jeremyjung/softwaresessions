@@ -4,7 +4,7 @@ title = "The good parts of AWS with Daniel Vassallo"
 description = "Daniel discusses how he chooses AWS services and his thoughts on the culture and future of Amazon"
 
 [extra]
-episode_url = "https://media.transistor.fm/b039e563.mp3"
+episode_url = "https://pinecast.com/listen/2f357754-6f26-45f5-afde-bfb6ea06b588.mp3"
 +++
 
 Daniel is the co-author of the book "The Good Parts of AWS" and previously worked at AWS on the CloudWatch team.  He left last year after over 8 years at Amazon to work on his own projects.
