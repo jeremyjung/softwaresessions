@@ -9,6 +9,8 @@ episode_url = "https://pinecast.com/listen/9e1646da-2f0d-432c-be41-4995c4180468.
 
 Victor is a software consultant in Tokyo who describes himself as a yak shaver. He writes on his blog at [vadosware](https://vadosware.io) and curates [Awesome F/OSS](https://awsmfoss.com/), a mailing list of open source products. He's also a contributor to the [Open Core Ventures blog](https://opencoreventures.com/blog/).
 
+Before our conversation Victor wrote a [structured summary of how he works on projects](https://vadosware.io/post/software-sessions-interview-2022/). I recommend checking that out in addition to the episode.
+
 ### Topics covered:
 
 - Most people should use [Dokku](https://dokku.com/) or [CapRover](https://caprover.com/) 
@@ -30,6 +32,7 @@ Victor is a software consultant in Tokyo who describes himself as a yak shaver. 
 ### Victor
 
 - [VADOSWARE](https://vadosware.io/) - Blog
+- [How Victor works on Projects](https://vadosware.io/post/software-sessions-interview-2022/) - Companion post for this episode
 - [Awesome FOSS](https://awsmfoss.com/) - Curated list of OSS projects
 - [NimbusWS](https://nimbusws.com/) - Hosted OSS built on top of budget cloud providers
 - [Unvalidated Ideas](https://unvalidatedideas.com/) - Startup ideas for side project inspiration
