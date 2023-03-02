@@ -5,9 +5,12 @@ description = "Luca explains JavaScript runtimes, why Deno was created, the diff
 
 [extra]
 episode_url = "https://pinecast.com/listen/f7267767-dff8-437b-8ff7-d7b95d4ff919.mp3"
+social_title = "Luca Casonato on Deno"
+social_banner = "048-luca-casonato.png"
+social_description = "An alternative to node"
 +++
 
-Deno is a JavaScript runtime that has a comprehensive standard library, web-standard APIs, and a built in linter, code formatter, and test runner. It was created by the creator of Node with the intent of [fixing the things he regretted about NodeJS](https://www.youtube.com/watch?v=M3BM9TB-8yA).
+Deno is a JavaScript runtime with a comprehensive standard library, web-standard APIs, and a built in linter, code formatter, and test runner. It was created by the creator of Node with the intent of [fixing the things he regretted about NodeJS](https://www.youtube.com/watch?v=M3BM9TB-8yA).
 
 Luca Casonato is the tech lead for [Deno Deploy](https://deno.com/deploy) and a [TC39](https://tc39.es/) delegate.
 
