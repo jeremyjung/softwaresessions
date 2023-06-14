@@ -6,6 +6,7 @@ description = "Anita and Alvaro discuss systemd and the psystemd python library"
 [extra]
 episode_url = "https://pinecast.com/listen/99e782d7-806c-4fc9-8a20-dd5b105dde9e.mp3"
 social_title = "Anita Zhang and Alvaro Levia on systemd at Meta"
+social_banner = "050-anita-alvaro.png"
 social_description = "Linux Userspace and Production Engineering"
 +++
 
