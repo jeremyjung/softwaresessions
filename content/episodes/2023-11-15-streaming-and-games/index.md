@@ -5,7 +5,7 @@ description = "How streaming regex crosswords led ChaelCodes to voice acting"
 
 [extra]
 episode_url = "https://pinecast.com/listen/3813a87b-2c99-4b0e-8631-66d8669fc8a3.mp3"
-social_title = "ChaelCodes on the joy of programming games and streaming"
+social_title = "ChaelCodes on the joy of programming games and streaming (RubyConf 2023)"
 social_description = "How streaming regex crosswords led ChaelCodes to voice acting"
 +++
 
