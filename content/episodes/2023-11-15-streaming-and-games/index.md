@@ -1,5 +1,5 @@
 +++
-title = "ChaelCodes on the joy of programming games and streaming"
+title = "ChaelCodes on the joy of programming games and streaming (RubyConf 2023)"
 
 description = "How streaming regex crosswords led ChaelCodes to voice acting"
 
