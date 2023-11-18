@@ -6,6 +6,7 @@ description = "Engineering at Stitch Fix, choosing technology, and how different
 [extra]
 episode_url = "https://pinecast.com/listen/4c33b02c-2f2e-45a0-ad7b-cc626e4c8a8c.mp3"
 social_title = "David Copeland on medium sized decisions (RubyConf 2023)"
+social_banner = "053-david-copeland.png"
 social_description = "Engineering at Stitch Fix, choosing technology, and how different people learn"
 +++
 
