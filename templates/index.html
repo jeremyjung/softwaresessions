@@ -83,10 +83,11 @@
 				{% if page.content %}
 					{{ page.content | safe }}
 				{% endif %}
-				<p>Say 👋 via <a href="mailto:contact@softwaresessions.com">e-mail</a> or <a href="https://www.twitter.com/jertype">twitter</a>.</p>
 
 				<iframe src="https://pinecast.com/embed/player_playlist/software-sessions?color.primary=%2330343c&amp;color.secondary=%2330343c&amp;color.accent=%230066ff" border="0" style="width:100%;border:0" height="400"></iframe>
-				Show notes and transcripts are available on the <a href="{{ get_url(path="@/episodes/_index.md") }}">episode pages</a>.
+				Show notes and transcripts <a href="{{ get_url(path="@/episodes/_index.md") }}">can be viewed here</a>.
+
+				<p>Say 👋 via <a href="mailto:contact@softwaresessions.com">e-mail</a> or <a href="https://notacult.social/@guu">mastodon</a>.</p>
 			</article>
 			{% endblock body %}
 		</main>
