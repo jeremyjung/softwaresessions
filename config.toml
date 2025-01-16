@@ -4,7 +4,7 @@ base_url = "https://www.softwaresessions.com"
 title = "Software Sessions"
 description = "Practical Conversations about Software Development"
 
-generate_feed = false
+# generate_feed = false
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
