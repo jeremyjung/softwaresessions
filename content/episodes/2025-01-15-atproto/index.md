@@ -14,6 +14,8 @@ Paul Frazee is the CTO of Bluesky. He previously worked on the Beaker browser an
 
 Paul discusses how Bluesky and ATProto got started, scaling up a social media site, what makes ATProto decentralized, lessons ATProto learned from previous peer-to-peer projects, and the challenges of content moderation.
 
+This episode originally aired on Software Engineering Radio.
+
 
 ## Related Links
 
