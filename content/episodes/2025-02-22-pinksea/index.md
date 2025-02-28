@@ -238,7 +238,7 @@ And also seeing people's personal collections of flash videos and jrandomly onli
 
 But all of them have like the same vibes to them. All of them have like a unified design language and all of them look very similar. And you kind of lose that creativity that some people had. Of course, you still find pretty websites that were made from scratch. But you don't really get the same vibes that you did get like back then.
 
-Like my favorite, for example, trend that used to be back on like the old internet is pixel art in web design. For example, [Kaliber10000](https://www.webdesignmuseum.org/gallery/kaliber10000-2003), or going off the top of my head, you had the [Eboy](https://www.webdesignmuseum.org/gallery/eboy-1999) or all the sites and then Poland, for example, ... (polish website) those websites use minimal graphics, like pixel graphics and everything to build really interesting looking websites.
+Like my favorite, for example, trend that used to be back on like the old internet is pixel art in web design. For example, [Kaliber10000](https://www.webdesignmuseum.org/gallery/kaliber10000-2003), or going off the top of my head, you had the [Eboy](https://www.webdesignmuseum.org/gallery/eboy-1999) or all the sites and then Poland for example [epuls.pl](epuls.pl) those websites use minimal graphics, like pixel graphics and everything to build really interesting looking websites.
 
 They had their own very massive charm to them that, I don't know, I don't see a lot in more modern internet. And it's also because back then you were limited by screen size, so you didn't have to worry about someone being on a Mac with high DPI or on a 32x9 monitor like I am right now.
 
