@@ -47,9 +47,9 @@ We talk about how static maps help developers build sites that last, the PMTiles
 
 ## Why not just use Google Maps?
 
-[00:00:36] **Jeremy:** A lot of people are gonna be familiar with Google Maps. Why should they worry about whether something's open source? Why shouldn't they just go and use the Google maps API?
+[00:00:36] **Jeremy:** A lot of people are gonna be familiar with Google Maps. Why should they worry about whether something's open source? Why shouldn't they just go and use the Google Maps API?
 
-[00:00:47] **Brandon:** So Google Maps is like an awesome thing it's an awesome product. Probably one of the best tech products ever right? And just to have a map that tells you what restaurants are open and something that I use like all the time especially like when you're traveling it has all that data.
+[00:00:47] **Brandon:** So Google Maps is like an awesome thing it's an awesome product. Probably one of the best tech products ever right? And just to have a map that tells you what restaurants are open and something that I use like all the time, especially like when you're traveling it has all that data.
 
 And the most amazing part is that it's free for consumers but it's not necessarily free for developers. Like if you wanted to embed that map onto your website or app, that usually has an API cost which still has a free tier and is affordable. But one motivation, one basic reason to use open source is if you have some project that doesn't really fit into that pricing model.
 
@@ -62,7 +62,7 @@ You know like where you have to pay the cost of Google Maps, you have a side pro
 
 [00:01:56] **Brandon:** I follow a lot of the use cases and I also don't know about a lot of them because I don't have an API where I can track a hundred percent of the users. Some of them use the hosted version, but I would say most of them probably use it on their own infrastructure. One of the cool projects I've been seeing is called [Toilet Map](https://www.toiletmap.org.uk/).
 
-And what toilet map is if you're in the UK and you want find a public restroom then it maps out, sort of crowdsourced all of the public restrooms. And that's important for like a lot of people if they have health issues, they need to find that information. And just a lot of different projects in the same vein. 
+And what Toilet Map is, if you're in the UK and you want find a public restroom then it maps out, sort of crowdsourced all of the public restrooms. And that's important for like a lot of people if they have health issues, they need to find that information. And just a lot of different projects in the same vein.
 
 There's another one called [Pinball Map](https://pinballmap.com/) which is sort of a hobby project to find all the pinball machines in the world. And they wanted to have a customized map that fit in with their theme of pinball. So these sorts of really cool indie projects are the ones I'm most excited about.
 
@@ -73,7 +73,7 @@ There's another one called [Pinball Map](https://pinballmap.com/) which is sort 
 
 [00:03:12] **Brandon:** It's usually something separate. The example I usually use is if you go to a real estate site, like Zillow, you'll open up the map of Seattle and it has a bunch of pins showing all the houses, and then it has some information beneath it. That information beneath it is like labels telling, this neighborhood is Capitol Hill, or there is a park here. But all that information is common to a lot of use cases and it's not specific to real estate. So I think usually that's the distinction people use in the industry between like a base map versus your overlay.
 
-The overlay is like the data for your product or your company while the base map is something you could get from Google or from Protomaps or from Apple or from Mapbox that kind of thing.
+The overlay is like the data for your product or your company while the base map is something you could get from Google or from Protomaps or from Apple or from Mapbox, that kind of thing.
 
 
 ## PMTiles for hosting the basemap and overlays
@@ -133,7 +133,7 @@ If that costs a couple dollars a month to run, that's fine, but it's not like S3
 
 [00:11:53] **Brandon:** Yeah, exactly. One place that's kind of surprising but makes sense where this comes up, is for newspapers actually. Some of the users using Protomaps are the Washington Post. And the reason they use it, is not necessarily because they don't want to pay for a SaaS like Google, but because if they make an interactive story, they have to guarantee that it still works in a couple of years.
 
-And that's like a policy decision from like the editorial board, which is like, so you can't write an article if people can't view it in five years. But if your like interactive data story is reliant on a third party, API and that third party API becomes deprecated, or it changes the pricing or it, you know, it gets acquired, then your journalism story is not gonna work anymore.
+And that's like a policy decision from like the editorial board, which is like, so you can't write an article if people can't view it in five years. But if your like interactive data story is reliant on a third party API and that third party API becomes deprecated, or it changes the pricing or it, you know, it gets acquired, then your journalism story is not gonna work anymore.
 
 So I have seen really good uptake among local news rooms and even big ones to use things like Protomaps just because it makes sense for the requirements.
 
@@ -178,16 +178,16 @@ So I think doing the opposite with Protomaps. As a user, I'm sure we're all appr
 
 Supabase is sort of like a platform as a service based on Postgres. And if you wanted to run it yourself, well you need to run Postgres and you need to handle backups and authentication and logging, and that stuff all needs to work and be production ready. So I think a lot of people, like they don't trust themselves to run database backups correctly.
 
-'cause if you get it wrong once, then you're kind of screwed. So I think that fundamental aspect of the product, like a database is something that is very, very ripe for being a SaaS while still being open source because it's fundamentally hard to run. Another one I can think of is like tailscale, which is, like a VPN that works end to end.
+'cause if you get it wrong once, then you're kind of screwed. So I think that fundamental aspect of the product, like a database is something that is very, very ripe for being a SaaS while still being open source because it's fundamentally hard to run. Another one I can think of is like Tailscale, which is, like a VPN that works end to end.
 
-That's something where, you know, it has this networking complexity where a lot of developers don't wanna deal with that. So they'd happily pay, for tailscale as a service. There is a lot of products or open source projects that eventually end up just changing to becoming like a hosted service.
+That's something where, you know, it has this networking complexity where a lot of developers don't wanna deal with that. So they'd happily pay, for Tailscale as a service. There is a lot of products or open source projects that eventually end up just changing to becoming like a hosted service.
 
 
 ## Businesses going from open source to closed or restricted licenses
 
 [00:17:58] **Brandon:** But then in that situation why would they keep it open source, right? Like, if it's easy to run yourself well, doesn't that sort of cannibalize their business model? And I think that's really the tension overall in these open source companies. So you saw it happen to things like Elasticsearch to things like Terraform where they eventually change the license to one that makes it difficult for other companies to compete with them.
 
-[00:18:23] **Jeremy:** Yeah, I mean there's been a number of cases like that. I mean, specifically within the mapping community, one I can think of was Mapbox's. They have Mapbox gl. Which was a JavaScript client to visualize maps and they moved from, I forget which license they picked, but they moved to a much more restrictive license.
+[00:18:23] **Jeremy:** Yeah, I mean there's been a number of cases like that. I mean, specifically within the mapping community, one I can think of was Mapbox's. They have Mapbox GL, which was a JavaScript client to visualize maps and they moved from, I forget which license they picked, but they moved to a much more restrictive license.
 
 I wonder what your thoughts are on something that releases as open source, but then becomes something maybe a little more muddy.
 
@@ -197,7 +197,7 @@ And I think sort of the beauty of it is that, so Mapbox, the story is they had a
 
 Right? So everyone can benefit from that work they did. It's not like that code went away, like once they changed the license. Well, the old version has been forked. It's going its own way now. It's quite different than the new version of Mapbox, but I think it's extremely generous that they're able to pay people for years, you know, like a competitive salary and just give that away.
 
-[00:20:10] **Jeremy:** Yeah, so we should maybe look at it as, it was a gift while it was open source, and they've given it to the community and they're on continuing on their own path, but at least the community running Map Libre, they can run with it, right? It's not like it just disappeared.
+[00:20:10] **Jeremy:** Yeah, so we should maybe look at it as, it was a gift while it was open source, and they've given it to the community and they're on continuing on their own path, but at least the community running MapLibre, they can run with it, right? It's not like it just disappeared.
 
 [00:20:29] **Brandon:** Yeah, exactly. And that is something that I use for Protomaps quite extensively. Like it's the primary way of showing maps on the web and I've been trying to like work on some enhancements to it to have like better internationalization for if you are in like South Asia like not show languages correctly.
 
@@ -208,15 +208,15 @@ So I think it is being taken in a new direction. And I think like sort of the co
 
 [00:21:12] **Jeremy:** In my previous interview with Tom, one of the main things he mentioned was that creating a mapping business is incredibly difficult, and he said he probably wouldn't do it again. So in your case, you're building Protomaps, which you've admitted is easy to self-host. So there's not a whole lot of incentive for people to pay you. How is that working out for you? How are you supporting yourself?
 
-[00:21:40] **Brandon:** There's a couple of strategies that I've tried and oftentimes failed at. Just to go down the list, so I do have GitHub sponsors so I do have a hosted version of Protomaps you can use if you don't want to bother copying a big file around. But the way I do the billing for that is through GitHub sponsors.
+[00:21:40] **Brandon:** There's a couple of strategies that I've tried and oftentimes failed at. Just to go down the list, so I do have GitHub Sponsors so I do have a hosted version of Protomaps you can use if you don't want to bother copying a big file around. But the way I do the billing for that is through GitHub sponsors.
 
-If you wanted to use this thing I provide, then just be a sponsor. And that definitely pays for itself, like the cost of running it. And that's great. GitHub sponsors is so easy to set up. It just removes you having to deal with Stripe or something. 'cause a lot of people, their credit card information is already in GitHub.
+If you wanted to use this thing I provide, then just be a sponsor. And that definitely pays for itself, like the cost of running it. And that's great. GitHub Sponsors is so easy to set up. It just removes you having to deal with Stripe or something. 'cause a lot of people, their credit card information is already in GitHub.
 
-GitHub sponsors I think is awesome if you want to like cover costs for a project. But I think very few people are able to make that work. A thing that's like a salary job level. It's sort of like Twitch streaming, you know, there's a handful of people that are full-time streamers and then you look down the list on Twitch and it's like a lot of people that have like 10 viewers.
+GitHub Sponsors I think is awesome if you want to like cover costs for a project. But I think very few people are able to make that work. A thing that's like a salary job level. It's sort of like Twitch streaming, you know, there's a handful of people that are full-time streamers and then you look down the list on Twitch and it's like a lot of people that have like 10 viewers.
 
-But some of the other things I've tried, I actually started out, publishing the base map as a closed source thing, where I would sell sort of like a data package instead of being a SaaS, I'd be like, here's a one-time download, of the premium data and you can buy it. And quite a few people bought it I just priced it at like $500 for this thing.
+But some of the other things I've tried, I actually started out, publishing the basemap as a closed source thing, where I would sell sort of like a data package instead of being a SaaS, I'd be like, here's a one-time download of the premium data and you can buy it. And quite a few people bought it, I just priced it at like $500 for this thing.
 
-And I thought that was an interesting experiment. The main reason it's interesting is because the people that it attracts to you in terms of like, they're curious about your products, are all people willing to pay money. While if you start out everything being open source, then the people that are gonna be try to do it are only the people that want to get something for free.
+And I thought that was an interesting experiment. The main reason it's interesting is because the people that it attracts to you in terms of like, they're curious about your products, are all people willing to pay money. While if you start out everything being open source, then the people that are gonna try to do it are only the people that want to get something for free.
 
 So what I discovered is actually like once you transition that thing from closed source to open source, a lot of the people that used to pay you money will still keep paying you money because like, it wasn't necessarily that that closed source thing was why they wanted to pay. They just valued that thought you've put into it your expertise, for example.
 
@@ -253,7 +253,7 @@ Well, I think most developers would be like, that's stupid because it's just an 
 
 ## How PMTiles works and building a primitive of the web
 
-[00:28:16] **Brandon:** If you look at video for example, like a lot of the tech for how Protomaps and PMTiles works is based on parts of the HTTP spec that were made for video. And 20 years ago, if you wanted to host a video on the web, you had to have like a real player license or flash. So you had to go license some server software from real media or from macromedia so you could stream video to a browser plugin.
+[00:28:16] **Brandon:** If you look at video for example, like a lot of the tech for how Protomaps and PMTiles works is based on parts of the HTTP spec that were made for video. And 20 years ago, if you wanted to host a video on the web, you had to have like a RealPlayer license or Flash. So you had to go license some server software from RealMedia or from Macromedia so you could stream video to a browser plugin.
 
 But now in HTML you can just embed a video file. And no one's like, oh well I need to go pay for my video serving license. I mean, there is such a thing, like YouTube doesn't really use that for DRM reasons, but people just have the assumption that video is like a primitive on the web. So if we're able to make maps sort of that same way like a primitive on the web then there isn't really some obvious business or licensing model behind how that works. Just because it's a thing and it helps a lot of people do their jobs and people are happy using it. So why bother?
 
@@ -271,29 +271,29 @@ But it's organized in, this tiled way on a space filling curve. IIt's a little b
 
 [00:30:47] **Jeremy:** So with a video, I can sort of see how as someone seeks through the video, they start at the beginning and then they go to the middle if they wanna see the middle. For a map, as somebody scrolls around the map, are you seeking all over the file or is the way it's structured have a little less chaos? 
 
-[00:31:09] **Brandon:** It's structured. And that's kind of the main technical challenge behind building PMTiles is you have to be sort of clever so you're not spraying the reads everywhere. So it uses something called a hilbert curve, which is a mathematical concept of a space filling curve. Where it's one continuous curve that essentially lets you break 2D space into 1D space.
+[00:31:09] **Brandon:** It's structured. And that's kind of the main technical challenge behind building PMTiles is you have to be sort of clever so you're not spraying the reads everywhere. So it uses something called a Hilbert curve, which is a mathematical concept of a space filling curve. Where it's one continuous curve that essentially lets you break 2D space into 1D space.
 
 So if you've seen some maps of IP space, it uses this crazy looking curve that hits all the points in one continuous line. And that's the same concept behind PMTiles is if you're looking at one part of the world, you're sort of guaranteed that all of those parts you're looking at are quite close to each other and the data you have to transfer is quite minimal, compared to if you just had it at random.
 
 [00:32:02] **Jeremy:** How big do the files get? If I have a PMTiles of the entire world, what kind of size am I looking at?
 
-[00:32:10] **Brandon:** Right now, the default one I distribute is 128 gigabytes, so it's quite sizable, although you can slice parts out of it remotely. So if you just wanted. if you just wanted California or just wanted LA or just wanted only a couple of zoom levels, like from zero to 10 instead of zero to 15, there is a command line tool that's also called PMTiles that lets you do that.
+[00:32:10] **Brandon:** Right now, the default one I distribute is 128 gigabytes, so it's quite sizable, although you can slice parts out of it remotely. So if you just wanted. if you just wanted California or just wanted LA or just wanted only a couple of zoom levels, like from zero to 10 instead of zero to 15, there is a command line tool that's also called pmtiles that lets you do that.
 
 
 ## Issues with CDNs and range queries
 
 [00:32:35] **Jeremy:** And when you're working with files of this size, I mean, let's say I am working with a CDN in front of my application. I'm not typically accustomed to hosting something that's that large and something that's where you're seeking all over the file. is that, ever an issue or is that something that's just taken care of by the browser and, and taken care of by, by the hosts?
 
-[00:32:58] **Brandon:** That is an issue actually, so a lot of CDNs don't deal with it correctly. And my recommendation is there is a kind of proxy server or like a serverless proxy thing that I wrote. That runs on like cloudflare workers or on Docker that lets you proxy those range requests into a normal URL and then that is like a hundred percent CDN compatible.
+[00:32:58] **Brandon:** That is an issue actually, so a lot of CDNs don't deal with it correctly. And my recommendation is there is a kind of proxy server or like a serverless proxy thing that I wrote. That runs on like Cloudflare Workers or on Docker that lets you proxy those range requests into a normal URL and then that is like a hundred percent CDN compatible.
 
-So I would say like a lot of the big commercial installations of this thing, they use that because it makes more practical sense. It's also faster. But the idea is that this solution sort of scales up and scales down. If you wanted to host just your city in like a 10 megabyte file, well you can just put that into GitHub pages and you don't have to worry about it.
+So I would say like a lot of the big commercial installations of this thing, they use that because it makes more practical sense. It's also faster. But the idea is that this solution sort of scales up and scales down. If you wanted to host just your city in like a 10 megabyte file, well you can just put that into GitHub Pages and you don't have to worry about it.
 
 If you want to have a global map for your website that serves a ton of traffic then you probably want a little bit more sophisticated of a solution. It still does not require you to run a Linux server, but it might require (you) to use like Lambda or Lambda in conjunction with like a CDN.
 
 
-[00:34:09] **Jeremy:** Yeah. And that sort of ties into what you were saying at the beginning where if you can host on something like CloudFlare Workers or Lambda, there's less time you have to spend keeping these things running.
+[00:34:09] **Jeremy:** Yeah. And that sort of ties into what you were saying at the beginning where if you can host on something like Cloudflare Workers or Lambda, there's less time you have to spend keeping these things running.
 
-[00:34:26] **Brandon:** Yeah, exactly. and I think also the Lambda or CloudFlare workers solution is not perfect. It's not as perfect as S3 or as just static files, but in my experience, it still is better at building something that lasts on the time span of years than being like I have a server that is on this Ubuntu version and in four years there's all these like security patches that are not being applied.
+[00:34:26] **Brandon:** Yeah, exactly. and I think also the Lambda or Cloudflare Workers solution is not perfect. It's not as perfect as S3 or as just static files, but in my experience, it still is better at building something that lasts on the time span of years than being like I have a server that is on this Ubuntu version and in four years there's all these like security patches that are not being applied.
 
 So it's still sort of serverless, although not totally vendor neutral like S3.
 
@@ -308,9 +308,9 @@ So it's still sort of serverless, although not totally vendor neutral like S3.
 
 So if you're able to name a bunch of colors, well you can customize the map in that way you can change the fonts. And that's all done using MapLibre GL using a TypeScript API on top of that for customizing the data. 
 
-So all the pipeline to generate this data from OpenStreetMap is open source. There is a Java program using a library called PlanetTiler which is awesome, which is this super fast multi-core way of building map tiles. And right now there isn't really great hooks to customize what data goes into that. But that's something that I do wanna work on. And finally, because the data comes from OpenStreetMap if you notice data that's missing or you wanted to correct data in OSM then you can go into osm.org.
+So all the pipeline to generate this data from OpenStreetMap is open source. There is a Java program using a library called Planetiler which is awesome, which is this super fast multi-core way of building map tiles. And right now there isn't really great hooks to customize what data goes into that. But that's something that I do wanna work on. And finally, because the data comes from OpenStreetMap if you notice data that's missing or you wanted to correct data in OSM then you can go into osm.org.
 
-You can get involved in contributing the data to OSM and the Protomaps build is daily. So if you make a change, then within 24 hours you should see the new base map. Have that change. And of course for OSM your improvements would go into every OSM based project that is ingesting that data. So it's not a protomap specific thing. It's like this big shared data source, almost like Wikipedia. 
+You can get involved in contributing the data to OSM and the Protomaps build is daily. So if you make a change, then within 24 hours you should see the new base map. Have that change. And of course for OSM your improvements would go into every OSM based project that is ingesting that data. So it's not a Protomaps specific thing. It's like this big shared data source, almost like Wikipedia.
 
 
 ## OpenStreetMap is a dataset and not a map
@@ -319,14 +319,14 @@ You can get involved in contributing the data to OSM and the Protomaps build is 
 
 [00:37:11] **Brandon:** Right. So I've been using OSM as sort of like a tools developer for over a decade now. And one of the number one questions I get from developers about what is Protomaps is why wouldn't I just use OpenStreetMap? What's the distinction between Protomaps and OpenStreetMap? And it's sort of like this funny thing because even though OSM has map in the name it's not really a map in that you can't... In that it's mostly a data set and not a map. 
 
-It does have a map that you can see that you can pan around to when you go to the website but the way that thing they show you on the website is built is not really that easily reproducible. It involves a lot of c++ software you have to run.
+It does have a map that you can see that you can pan around to when you go to the website but the way that thing they show you on the website is built is not really that easily reproducible. It involves a lot of C++ software you have to run.
 
 But OpenStreetMap itself, the heart of it is almost like a big XML file that has all the data in the map and global. And it has tagged features for example. So you can go in and edit that. It has a web front end to change the data. It does not directly translate into making a map actually.
 
 
 ## Protomaps decides what shows at each zoom level
 
-[00:38:24] **Brandon:** So a lot of the pipeline, that Java program I mentioned for building this basemap for protomaps is doing things like you have to choose what data you show when you zoom out. You can't show all the data. For example when you're zoomed out and you're looking at all of a state like Colorado you don't see all the Chipotle when you're zoomed all the way out. That'd be weird, right? 
+[00:38:24] **Brandon:** So a lot of the pipeline, that Java program I mentioned for building this basemap for Protomaps is doing things like you have to choose what data you show when you zoom out. You can't show all the data. For example when you're zoomed out and you're looking at all of a state like Colorado you don't see all the Chipotles when you're zoomed all the way out. That'd be weird, right?
 
 So you have to make some sort of decision in logic that says this data only shows up at this zoom level. And that's really what is the challenge in optimizing the size of that for the Protomaps map project.
 
@@ -336,9 +336,9 @@ So you have to make some sort of decision in logic that says this data only show
 
 But because there is no advertising auction in Protomaps that doesn't happen obviously. So we have to sort of make some reasonable choice. A lot of that right now in Protomaps actually comes from another open source project called Mapzen. So Mapzen was a company that went outta business a couple years ago.
 
-They did a lot of this work in designing which data shows up at which Zoom level and open sourced it. And then when they shut down, they transferred that code into the Linux Foundation. So it's this totally open source project, that like, again, sort of like Mapbox gl has this awesome legacy in that this company funded it for years for smart people to work on it and now it's just like a free thing you can use. So the logic in Protomaps is really based on mapzen.
+They did a lot of this work in designing which data shows up at which zoom level and open sourced it. And then when they shut down, they transferred that code into the Linux Foundation. So it's this totally open source project, that like, again, sort of like Mapbox GL has this awesome legacy in that this company funded it for years for smart people to work on it and now it's just like a free thing you can use. So the logic in Protomaps is really based on Mapzen.
 
-[00:40:33] **Jeremy:** And so the visualization of all this... I think I understand what you mean when people say oh, why not use OpenStreetMaps because it's not really clear it's hard to tell is this the tool that's visualizing the data? Is it the data itself? So in the case of using Protomaps, it sounds like Protomaps itself has all of the data from OpenStreetMap and then it has made all the decisions for you in terms of what to show at different Zoom levels and what things to have on the map at all. And then finally, you have to have a separate, UI layer and in this case, it sounds like the one that you recommend is the Map Libre library.
+[00:40:33] **Jeremy:** And so the visualization of all this... I think I understand what you mean when people say oh, why not use OpenStreetMap because it's not really clear it's hard to tell is this the tool that's visualizing the data? Is it the data itself? So in the case of using Protomaps, it sounds like Protomaps itself has all of the data from OpenStreetMap and then it has made all the decisions for you in terms of what to show at different Zoom levels and what things to have on the map at all. And then finally, you have to have a separate, UI layer and in this case, it sounds like the one that you recommend is the MapLibre library.
 
 [00:41:18] **Brandon:** Yeah, that's exactly right. For Protomaps, it has a portion or a subset of OSM data. It doesn't have all of it just because there's too much, like there's data in there. people have mapped out different bushes and I don't include that in Protomaps if you wanted to go in and edit like the Java code to add that you can.
 
@@ -347,15 +347,15 @@ But really what Protomaps is positioned at is sort of a solution for developers 
 
 ## Financials and the idea of a project being complete
 
-[00:41:59] **Jeremy:** So I think it's great that somebody who wants to make a map, they have these tools available, whether it's from what was originally built by Mapbox, what's built by Open StreetMap now, the work you're doing with Protomaps. But I wonder one of the things that I talked about with Tom was he was saying  he was trying to build this mapping business and based on the financials of what was coming in he was stressed, right?
+[00:41:59] **Jeremy:** So I think it's great that somebody who wants to make a map, they have these tools available, whether it's from what was originally built by Mapbox, what's built by OpenStreetMap now, the work you're doing with Protomaps. But I wonder one of the things that I talked about with Tom was he was saying  he was trying to build this mapping business and based on the financials of what was coming in he was stressed, right?
 
 He was struggling a bit. And I wonder for you, you've been working on this open source project for five years. Do you have similar stressors or do you feel like I could keep going how things are now and I feel comfortable?
 
 [00:42:46] **Brandon:** So I wouldn't say I'm a hundred percent in one bucket or the other. I'm still seeing it play out. One thing, that I really respect in a lot of open source projects, which I'm not saying I'm gonna do for Protomaps is the idea that a project is like finished. I think that is amazing.
 
-If a software project can just be done it's sort of like a painting or a novel once you write, finish the last page, have it seen by the editor. I send it off to the press is you're done with a book. And I think one of the pains of software is so few of us can actually do that.
+If a software project can just be done it's sort of like a painting or a novel once you write, finish the last page, have it seen by the editor. I send it off to the press if you're done with a book. And I think one of the pains of software is so few of us can actually do that.
 
-And I don't know obviously people will say oh the map is never finished. That's more true of OSM, but I think like for Protomaps. One thing I'm thinking about is how to limit the scope to something that's quite narrow to where we could be feature complete on the core things in the near term timeframe.
+And I don't know, obviously people will say, oh the map is never finished. That's more true of OSM, but I think like for Protomaps, one thing I'm thinking about is how to limit the scope to something that's quite narrow to where we could be feature complete on the core things in the near term timeframe.
 
 That means that it does not address a lot of things that people want. Like search, like if you go to Google Maps and you search for a restaurant, you will get some hits. that's like a geocoding issue. And I've already decided that's totally outta scope for Protomaps. So, in terms of trying to think about the future of this, I'm mostly looking for ways to cut scope if possible.
 
@@ -365,7 +365,7 @@ So I like hearing about when people are using it for cool projects. So it seems 
 
 [00:44:44] **Jeremy:** Yeah, that's an interesting perspective about how you were talking about projects being done. Because I think when people look at GitHub projects and they go like, oh, the last commit was X months ago. They go oh well this is dead right? But maybe that's the wrong framing. Maybe you can get a project to a point where it's like, oh, it's because it doesn't need to be updated.
 
-[00:45:07] **Brandon:** Exactly, yeah. Like I used to do a lot of c++ programming and the best part is when you see some LAPACK matrix math library from like 1995 that still works perfectly in c++ and you're like, this is awesome. This is the one I have to use. But if you're like trying to use some like React component library and it hasn't been updated in like a year, you're like, oh, that's a problem.
+[00:45:07] **Brandon:** Exactly, yeah. Like I used to do a lot of C++ programming and the best part is when you see some LAPACK matrix math library from like 1995 that still works perfectly in C++ and you're like, this is awesome. This is the one I have to use. But if you're like trying to use some like React component library and it hasn't been updated in like a year, you're like, oh, that's a problem.
 
 So again, I think there's some middle ground between those that I'm trying to find. I do like for Protomaps, it's quite dependency light in terms of the number of hard dependencies I have in software. but I do still feel like there is a lot of work to be done in terms of project scope that needs to have stuff added.
 
@@ -389,13 +389,13 @@ And that's honestly a lot of the things and people are like when is this thing g
 
 But I didn't realize when I was younger well if I just merge it and I disappear, then the maintainer is stuck with what I did forever. You know if I add some feature then that person that maintains the project has to do that indefinitely. And I think that's very asymmetrical and it's changed my perspective a lot on accepting open source contributions.
 
-I wanna have it be open to anyone to contribute. But there is some amount of back and forth where it's almost like the default answer for should I accept a PR is no by default because you're the one maintaining it. And do you understand the shape of that solution completely to where you're going to support it for years because the person that's contributing it is not bound to those same obligations that you are.
+I wanna have it be open to anyone to contribute. But there is some amount of back and forth where it's almost like the default answer for should I accept a PR is "no" by default because you're the one maintaining it. And do you understand the shape of that solution completely to where you're going to support it for years because the person that's contributing it is not bound to those same obligations that you are.
 
-And I think that's also one of the things where I have a lot of trepidation around open source is I used to think of it as a lot more bazaar-like in terms of anyone can just throw their thing in. But then that creates a lot of problems for the people who are expected out of social obligation to continue this thing indefinitely.
+And I think that's also one of the things where I have a lot of trepidation around open source, is I used to think of it as a lot more bazaar-like in terms of anyone can just throw their thing in. But then that creates a lot of problems for the people who are expected out of social obligation to continue this thing indefinitely.
 
 [00:49:23] **Jeremy:** Yeah, I can totally see why that causes burnout with a lot of open source maintainers, because you probably to some extent maybe even feel some guilt right? You're like, well, somebody took the time to make this. But then like you said you have to spend a lot of time trying to figure out is this something I wanna maintain long term? And one wrong move and it's like, well, it's in here now. 
 
-[00:49:53] **Brandon:** Exactly. To me, I think that is a very common failure mode for open source projects is they're too liberal in the things they accept. And that's a lot of why I was talking about how that choice of what features show up on the map was inherited from the MapZen projects. If I didn't have that then somebody could come in and say hey, you know, I want to show power lines on the map.
+[00:49:53] **Brandon:** Exactly. To me, I think that is a very common failure mode for open source projects is they're too liberal in the things they accept. And that's a lot of why I was talking about how that choice of what features show up on the map was inherited from the Mapzen projects. If I didn't have that then somebody could come in and say hey, you know, I want to show power lines on the map.
 
 And they open a PR for power lines and now everybody who's using Protomaps when they're like zoomed out they see power lines are like I didn't want that. So I think that's part of why a lot of open source projects eventually evolve into a plugin system is because there is this demand as the project grows for more and more features. But there is a limit in the maintainers. It's like the demand for features is exponential while the maintainer amount of time and effort is linear. 
 
@@ -420,7 +420,7 @@ Where you have logic inside of your templates and I honestly do not really know 
 
 [00:52:58] **Jeremy:** Yeah and then in terms of bug reports or issues, now it's not just your code it's this exponential combination of whatever people put into these config files.
 
-[00:53:09] **Brandon:** Exactly. Yeah. so again, like I really respect the projects that have done this well or that have done plugins well. I'm trying to think of some, I think obsidian has plugins, for example. And that seems to be one of the few solutions to try and satisfy the infinite desire for features with the limited amount of maintainer time.
+[00:53:09] **Brandon:** Exactly. Yeah. so again, like I really respect the projects that have done this well or that have done plugins well. I'm trying to think of some, I think Obsidian has plugins, for example. And that seems to be one of the few solutions to try and satisfy the infinite desire for features with the limited amount of maintainer time.
 
 
 ## Time split between code vs triage vs talking to users
@@ -433,7 +433,7 @@ And I would say maybe a plurality of my time is spent dealing with non-technical
 
 But that really is like one of the best target audiences for Protomaps. So I'd say a lot of the reality of running an open source project is a lot like a business is it has all the same challenges as a business in terms of you have to figure out what is the thing you're offering.
 
-You have to deal with people using it. You have to deal with feedback, you have to deal with managing emails and stuff. I don't think the payoff is anywhere near running a business or a startup that's backed by VC money is but it's definitely not the case that if you just want to code, you should start an open source project because I think a lot of the work for an opensource project has nothing to do with just writing the code.
+You have to deal with people using it. You have to deal with feedback, you have to deal with managing emails and stuff. I don't think the payoff is anywhere near running a business or a startup that's backed by VC money is but it's definitely not the case that if you just want to code, you should start an open source project because I think a lot of the work for an open source project has nothing to do with just writing the code.
 
 It is in my opinion as someone having done a VC backed business before, it is a lot more similar to running, a tech company than just putting some code on GitHub.
 
@@ -467,7 +467,7 @@ So there are other contributors at this point and I want to get more involved. B
 
 [00:59:50] **Jeremy:** I think that's a good spot to end it on, so if people want to learn more about Protomaps or they wanna see what you're up to, where should they head?
 
-[01:00:00] **Brandon:** So you can go to Protomaps.com, GitHub, or you can find me or Protomaps on bluesky or Mastodon.
+[01:00:00] **Brandon:** So you can go to Protomaps.com, GitHub, or you can find me or Protomaps on Bluesky or Mastodon.
 
 [01:00:09] **Jeremy:** All right, Brandon, thank you so much for chatting today.
 
