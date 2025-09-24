@@ -41,7 +41,7 @@ We discuss how Wine and Proton make it possible to run Windows applications on o
 [00:00:20] **Elizabeth:** So wine is a translation layer. in fact, I would say wine is a Windows emulator. That is what the name originally stood for. it re implements the entire windows. Or you say win 32 API. so that programs that make calls into the API, will then transfer that code to wine and and we allow that Windows programs to run on, things that are not windows. So Linux, Mac, os, other operating systems such as Solaris and BSD. it works not by emulating the CPU, but by re-implementing every API, basically from scratch and translating them to their equivalent or writing new code in case there is no, you know, equivalent.
 
 
-## System Callszzzzzzzz
+## System Calls
 
 [00:01:06] **Jeremy:** I believe what you're doing is you're emulating system calls. Could you explain what those are and, and how that relates to the project?
 
@@ -72,7 +72,7 @@ We discuss how Wine and Proton make it possible to run Windows applications on o
 [00:04:14] **Elizabeth:** Yeah. And, and we also, you know, need to make it work. we also need to implement those things to make old, programs work because there is, uh, a lot of demand, at least from, at least from people using wine for making, for getting some really old programs, working from the. Early nineties even.
 
 
-## What people run with Wine (Producivity, build systems, servers)
+## What people run with Wine (Productivity, build systems, servers)
 
 [00:04:36] **Jeremy:** And that's probably a good, thing to talk about in terms of what, what are the types of software that, that people are trying to run with wine, and what operating system are they typically using?
 
