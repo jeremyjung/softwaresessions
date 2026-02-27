@@ -48,7 +48,7 @@ This is an extended version of an interview posted on Software Engineering Radio
 
 [00:01:01] **Bryan:** Yeah, I mean, so at Joyent, and so Joyent was a cloud computing pioneer. Uh, we competed with the likes of AWS and then later GCP and Azure. Uh, and we, I mean, we were operating at a scale, right? We had a bunch of machines, a bunch of dcs, but ultimately we know we were a VC backed company and, you know, a small company by the standards of, certainly by Samsung standards.
 
-[00:01:25] **Bryan:** And so when, when Samsung bought the company, I mean, the reason by the way that Samsung bought Joyent is Samsung's. Cloud Bill was, uh, let's just say it was extremely large. They were spending an enormous amount of money every year on, on the public cloud. And they realized that in order to secure their fate economically, they had to be running on their own infrastructure.
+[00:01:25] **Bryan:** And so when, when Samsung bought the company, I mean, the reason by the way that Samsung bought Joyent is Samsung's cloud bill was let's just say it was extremely large. They were spending an enormous amount of money every year on, on the public cloud. And they realized that in order to secure their fate economically, they had to be running on their own infrastructure.
 
 [00:01:51] **Bryan:** It did not make sense. And there's not, was not really a product that Samsung could go buy that would give them that on-prem cloud. Uh, I mean in that, in that regard, like the state of the market was really no different. And so they went looking for a company, uh, and bought, bought Joyent. And when we were on the inside of Samsung.
 
@@ -92,7 +92,6 @@ This is an extended version of an interview posted on Software Engineering Radio
 
 [00:08:18] **Bryan:** And these things happen up and down the stack. And for every, for whether it's, and, and not just to pick on Dell because it's, it's true for HPE, it's true for super micro, uh, it's true for your switch vendors. It's, it's true for storage vendors where the, the, the, the one that is left actually integrating these things and trying to make the the whole thing work is the end user sitting in their data center.
 
-
 ## AWS / Google are not buying off the shelf hardware but you can't use it
 
 [00:08:42] **Bryan:** There's not a product that they can buy that gives them elastic infrastructure, a cloud in their own DC The, the product that you buy is the public cloud. Like when you go in the public cloud, you don't worry about the stuff because that it's, it's AWS's issue or it's GCP's issue. And they are the ones that get this to ground.
@@ -105,18 +104,13 @@ This is an extended version of an interview posted on Software Engineering Radio
 
 [00:10:07] **Bryan:** There are a bunch of reasons why one might wanna to own one's own infrastructure. But, uh, that was very much the, the, so the, the genesis for oxide was coming out of this very painful experience and a painful experience that, because, I mean, a long answer to your question about like what was it like to be at Samsung scale?
 
-[00:10:27] **Bryan:** Those are the kinds of things that we, I mean, in our other data centers, we didn't have Toshiba drives. We only had the HDSC drives, but it's only when you get to this larger scale that you begin to see some of these pathologies. But these pathologies then are really debilitating in terms of those who are trying to develop a service on top of them.
+[00:10:27] **Bryan:** Those are the kinds of things that we, I mean, in our other data centers, we didn't have Toshiba drives. We only had the HTSC (Hitachi Toshiba Supreme Consortium) drives, but it's only when you get to this larger scale that you begin to see some of these pathologies. But these pathologies then are really debilitating in terms of those who are trying to develop a service on top of them.
 
 [00:10:45] **Bryan:** So it was, it was very educational in, in that regard. And you're very grateful for the experience at Samsung in terms of opening our eyes to the challenge of running at that kind of scale.
 
-[00:10:57] **Jeremy:** Yeah, because I, I think as software engineers, a lot of times we, we treat the hardware as a, as a given where,
+## There's software in hard drives
 
-[00:11:08] **Bryan:** Yeah.
-
-[00:11:08] **Bryan:** Yeah.
-
-
-## There's software in chard drives
+[00:10:57] **Jeremy:** Yeah, because I, I think as software engineers, a lot of times we, we treat the hardware as a, as a given where...
 
 [00:11:09] **Jeremy:** It sounds like in, in this case, I mean, maybe the issue is not so much that. Dell or HP as a company doesn't own every single piece that they're providing you, but rather the fact that they're swapping pieces in and out without advertising them, and then when it becomes a problem, they're not necessarily willing to, to deal with the, the consequences of that. 
 
@@ -137,8 +131,7 @@ This is an extended version of an interview posted on Software Engineering Radio
 [00:13:34] **Jeremy:** And during that time at Joyent, when you experienced some of these issues, was it more of a case of you didn't have enough servers experiencing this? So if it would happen, you might say like, well, this one's not working, so maybe we'll just replace the hardware. What, what was the thought process when you were working at that smaller scale and, and how did these issues affect you?
 
 
-## 
-UEFI / Baseboard Management Controller
+## UEFI / Baseboard Management Controller
 
 [00:13:58] **Bryan:** Yeah, at the smaller scale, you, uh, you see fewer of them, right? You just see it's like, okay, we, you know, what you might see is like, that's weird. We kinda saw this in one machine versus seeing it in a hundred or a thousand or 10,000. Um, so you just, you just see them, uh, less frequently as a result, they are less debilitating.
 
@@ -154,7 +147,7 @@ UEFI / Baseboard Management Controller
 
 [00:16:16] **Bryan:** It's kinda like a little, little BMC humor. Um, but those things, it was just dispiriting that, that the, the state-of-the-art was still basically personal computers running in the data center. Um, and that's part of what, what was the motivation for doing something new?
 
-[00:16:32] **Jeremy:** And for the people using these systems, whether it's the baseboard management controller or it's the The BIOS or UF UEFI component, what are the actual problems that people are seeing seen?
+[00:16:32] **Jeremy:** And for the people using these systems, whether it's the baseboard management controller or it's the The BIOS or UEFI component, what are the actual problems that people are seeing seen?
 
 
 ## Security vulnerabilities and poor practices in the BMC
@@ -165,7 +158,7 @@ UEFI / Baseboard Management Controller
 
 [00:17:24] **Bryan:** But I mean, as like, as a really concrete example. Okay, so the, the BMCs that, that the computer within the computer that needs to be on its own network. So you now have like not one network, you got two networks that, and that network, by the way, it, that's the network that you're gonna log into to like reset the machine when it's otherwise unresponsive.
 
-[00:17:44] **Bryan:** So that going into the BMC, you can are, you're able to control the entire machine. Well it's like, alright, so now I've got a second net network that I need to manage. What is running on the BMC? Well, it's running some. Ancient, ancient version of Linux it that you got. It's like, well how do I, how do I patch that?
+[00:17:44] **Bryan:** So that going into the BMC, you're able to control the entire machine. Well it's like, alright, so now I've got a second net network that I need to manage. What is running on the BMC? Well, it's running some. Ancient, ancient version of Linux it that you got. It's like, well how do I, how do I patch that?
 
 [00:18:02] **Bryan:** How do I like manage the vulnerabilities with that? Because if someone is able to root your BMC, they control the system. So it's like, this is not you've, and now you've gotta go deal with all of the operational hair around that. How do you upgrade that system updating the BMC? I mean, it's like you've got this like second shadow bad infrastructure that you have to go manage.
 
@@ -190,9 +183,9 @@ UEFI / Baseboard Management Controller
 
 ## The problem is felt with just a few racks
 
-[00:22:05] **Jeremy:** Yeah, so maybe to help people get some perspective at, at what point do you think that people start noticing or start feeling these problems? Because I imagine that if you're just have a few racks or 
+[00:22:05] **Jeremy:** Yeah, so maybe to help people get some perspective at, at what point do you think that people start noticing or start feeling these problems? Because I imagine that if you're just have a few racks or ...
 
-[00:22:22] **Bryan:** do you have a couple racks or the, or do you wonder or just wondering because No, no, no. I would think, I think anyone who deploys any number of servers, especially now, especially if your experience is only in the cloud, you're gonna be like, what the hell is this? I mean, just again, just to get this thing working at all.
+[00:22:22] **Bryan:** Do you have a couple racks or just wondering because No, no, no. I would think, I think anyone who deploys any number of servers, especially now, especially if your experience is only in the cloud, you're gonna be like, what the hell is this? I mean, just again, just to get this thing working at all.
 
 [00:22:39] **Bryan:** It is so it, it's so hairy and so congealed, right? It's not designed. Um, and it, it, it, it's accreted it and it's so obviously accreted that you are, I mean, nobody who is setting up a rack of servers is gonna think to themselves like, yes, this is the right way to go do it. This all makes sense because it's, it's just not, it, I, it feels like the kit, I mean, kit car's almost too generous because it implies that there's like a set of plans to work to in the end.
 
@@ -224,7 +217,7 @@ UEFI / Baseboard Management Controller
 
 [00:26:33] **Bryan:** Uh, and there's a whole lot of complexity that you need to go deal with that. There's a lot of complexity that you need to go deal with this effectively, this workflow that's gonna go create these things and manage them. Um, we use a, a pattern that we call, that are called sagas, actually is a, is a database pattern from the eighties.
 
-[00:26:51] **Bryan:** Uh, Katie McCaffrey is a, is a database reCrcher who, who, uh, I, I think, uh, reintroduce the idea of, of sagas, um, in the last kind of decade. Um, and this is something that we picked up, um, and I've done a lot of really interesting things with, um, to allow for, to this kind of, these workflows to be, to be managed and done so robustly in a way that you can restart them and so on.
+[00:26:51] **Bryan:** Uh, Katie McCaffrey is a, is a database researcher who reintroduced the idea of, of sagas in the last kind of decade. Um, and this is something that we picked up, um, and I've done a lot of really interesting things with, um, to allow for, to this kind of, these workflows to be, to be managed and done so robustly in a way that you can restart them and so on.
 
 [00:27:16] **Bryan:** Uh, and then you guys, you get this whole distributed system that can do all this. That whole distributed system, that itself needs to be reliable and available. So if you, you know, you need to be able to, what happens if you, if you pull a sled or if a sled fails, how does the system deal with that?
 
@@ -239,7 +232,7 @@ UEFI / Baseboard Management Controller
 
 [00:28:20] **Jeremy:** And for people who have run their own servers with something like say VMware or Hyper V or Proxmox, are those in the same category? 
 
-[00:28:32] **Bryan:** Yeah, I mean a little bit. I mean, it kind of like vSphere Yes. Via VMware. No. So it's like you, uh, VMware ESX is, is kind of a key building block upon which you can build something that is a more meaningful distributed system. When it's just like a machine that you're provisioning VMs on, it's like, okay, well that's actually, you as the human might be the control plane.
+[00:28:32] **Bryan:** Yeah, I mean a little bit. I mean, it kind of like vSphere Yes. Via VMware. No. So  VMware ESXi is kind of a key building block upon which you can build something that is a more meaningful distributed system. When it's just like a machine that you're provisioning VMs on, it's like, okay, well that's actually, you as the human might be the control plane.
 
 [00:28:52] **Bryan:** Like, that's, that, that's, that's a much easier problem. Um, but when you've got, you know, tens, hundreds, thousands of machines, you need to do it robustly. You need something to coordinate that activity and you know, you need to pick which sled you land on. You need to be able to move these things. You need to be able to update that whole system.
 
@@ -379,7 +372,7 @@ UEFI / Baseboard Management Controller
 
 [00:47:26] **Bryan:** You should select values that align with the values that you have for that software. That is, those are, that's way more important than other things that people look at. I think people look at, for example, quote unquote community size way too frequently, community size is like. Eh, maybe it can be fine.
 
-[00:47:44] **Bryan:** I've been in very large communities, node. I've been in super small open source communities like AUMs and RAs, a bunch of others. there are strengths and weaknesses to both approaches just as like there's a strength to being in a big city versus a small town. Me personally, I'll take the small community more or less every time because the small community is almost always self-selecting based on values and just for the same reason that I like working at small companies or small teams.
+[00:47:44] **Bryan:** I've been in very large communities, node. I've been in super small open source communities like Illumos and DTrace, a bunch of others. there are strengths and weaknesses to both approaches just as like there's a strength to being in a big city versus a small town. Me personally, I'll take the small community more or less every time because the small community is almost always self-selecting based on values and just for the same reason that I like working at small companies or small teams.
 
 [00:48:11] **Bryan:** There's a lot of value to be had in a small community. It's not to say that large communities are valueless, but again, long answer to your question of kind of where did things go south with Joyent and node. They went south because the, the values that we had and the values the community had didn't line up and that was a very educational experience, as you might imagine.
 
@@ -454,7 +447,7 @@ UEFI / Baseboard Management Controller
 
 [00:57:38] **Bryan:** Now conversely, you're like, Hey, I kind of don't care about this. And like, I don't know, I'm just like, I wanna see if this whole thing works. I've got, I like, I'm just stringing this together. I don't like, no, the software like will be lucky if it survives until tonight, but then like, who cares? Yeah. Yeah.
 
-[00:57:52] **Bryan:** Gar garbage clock. You know, if you're prototyping something, whatever. And this is why you really do get like, you know, different choices, different technology choices, depending on the way that you wanna solve the problem at hand. And for the software that I wanna write, I do like that cognitive load that is upfront.
+[00:57:52] **Bryan:** Gar garbage collect. You know, if you're prototyping something, whatever. And this is why you really do get like, you know, different choices, different technology choices, depending on the way that you wanna solve the problem at hand. And for the software that I wanna write, I do like that cognitive load that is upfront.
 
 
 ## With LLMs maybe you can get the benefit of the robust artifact with less cognitive load
@@ -591,7 +584,7 @@ UEFI / Baseboard Management Controller
 
 [01:14:54] **Bryan:** It makes for a simple board when you can just put the soft logic down. Um, and some of these are crazy small FPGAs, that are, are small, but they're, there are enough for what we need. we also have higher performance FPGAs that we are increasingly using, uh, for things like NICs uh, network interface cards.
 
-[01:15:11] **Bryan:** So we are. some of the, the kind of the next gen FPGAs, are really pretty cool because they have what you call a hard block, which is say kind of like one of the components that the, the hard components on. They're not programmable. That allows you to have like a surveys that allows you to actually speak over a network, which is actually a really hard part of a nick.
+[01:15:11] **Bryan:** So we are. some of the, the kind of the next gen FPGAs, are really pretty cool because they have what you call a hard block, which is say kind of like one of the components that the, the hard components on. They're not programmable. That allows you to have like a surveys that allows you to actually speak over a network, which is actually a really hard part of a NIC.
 
 [01:15:30] **Bryan:** And then you could do the NIC in soft logic, which is really neat. Um, so we're really excited about that. That's the kind of in a forthcoming platform. We're working on a, uh, an FPGA there. Uh, and then of course we've got, so in asic uh, um, is an application specific integrated circuit, and that's, uh, not dynamically reconfigurable.
 
