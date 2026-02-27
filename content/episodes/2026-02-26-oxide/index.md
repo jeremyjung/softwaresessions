@@ -33,9 +33,9 @@ This is an extended version of an interview posted on Software Engineering Radio
 
 ## Intro
 
-[00:00:00] **Jeremy:** Today I am talking to Brian Cantrill. He's the co-founder and CTO of Oxide computer company, and he was previously the CTO of Joyent and he also co-authored the DTrace Tracing framework while he was at Sun Microsystems.
+[00:00:00] **Jeremy:** Today I am talking to Bryan Cantrill. He's the co-founder and CTO of Oxide computer company, and he was previously the CTO of Joyent and he also co-authored the DTrace Tracing framework while he was at Sun Microsystems.
 
-[00:00:14] **Jeremy:** Brian, welcome to Software Engineering radio. 
+[00:00:14] **Jeremy:** Bryan, welcome to Software Engineering radio. 
 
 [00:00:17] **Bryan:** Uh, awesome. Thanks for having me. It's great to be here.
 
@@ -704,6 +704,6 @@ UEFI / Baseboard Management Controller
 
 [01:29:35] **Bryan:** It's great. It's like, oh, okay. So, you know, the, it, it's, um, we love that we, we love the fact that people can see what we're working on. We have always felt there's much more to gain than there is to lose
 
-[01:29:48] **Jeremy:** Very cool. Well, Brian, thank you for chatting with me today. This was fun.
+[01:29:48] **Jeremy:** Very cool. Well, Bryan, thank you for chatting with me today. This was fun.
 
 [01:29:51] **Bryan:** Absolutely. Thanks for having me. This was a, this was a lot of fun. Uh, and, and sorry to take you into the filth that is the modern data center.
